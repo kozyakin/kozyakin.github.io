@@ -1,6 +1,6 @@
 ## Welcome to Victor Kozyakin GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/kozyakin/kozyakin.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+You can use the [editor on GitHub](https://github.com/kozyakin/kozyakin.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.[Библиография](https://github.com/kozyakin/kozyakin.github.io/blob/main/jsrbib/jsrbib.html)  
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
