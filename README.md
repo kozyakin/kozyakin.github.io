@@ -17,4 +17,7 @@ An annotated bibliography on convergence of matrix products and the theory of jo
 
 ## My links
 
-- Home page [in English](http://iitp.ru/en/users/46.htm), [in Кгыышфт](http://iitp.ru/кг/users/46.htm)
+- Home page [in English](http://iitp.ru/en/users/46.htm), [in Russian](http://iitp.ru/кг/users/46.htm)
+- [ResearchGate](https://www.researchgate.net/profile/Victor_Kozyakin/)
+- [ORCID](https://orcid.org/0000-0002-6465-0040)
+- 
