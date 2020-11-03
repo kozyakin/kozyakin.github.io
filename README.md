@@ -4,7 +4,7 @@
 ## About me
 I am Victor Kozyakin, chief researcher at the Institute of Information Transmission Problems, Russian Academy of Science.
 
-More details see at my [Home page](http://iitp.ru/en/users/46.htm)
+More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 
 ---
@@ -22,7 +22,7 @@ More details see at my [Home page](http://iitp.ru/en/users/46.htm)
 ---
 ## My links
 
-- Home page [in English](http://iitp.ru/en/users/46.htm), [in Russian](http://iitp.ru/ru/users/46.htm)
+- Homepage [in English](http://iitp.ru/en/users/46.htm), [in Russian](http://iitp.ru/ru/users/46.htm)
 - [ArXiv](https://arxiv.org/a/kozyakin_v_1)
 - [ResearchGate](https://www.researchgate.net/profile/Victor_Kozyakin/)
 - [ORCID](https://orcid.org/0000-0002-6465-0040)
