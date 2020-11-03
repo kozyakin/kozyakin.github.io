@@ -11,7 +11,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 ## My projects
 
 
-### JRSbib
+### JSRbib
 
 *A permanently updated annotated list of publications on the convergence of infinite matrix products and the rate of their growth/decrease as the number of factors tends to infinity.*
 
