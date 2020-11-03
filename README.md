@@ -13,7 +13,7 @@ More details see at my [Home page](http://iitp.ru/en/users/46.htm)
 
 ### JRSbib
 
-An annotated bibliography on convergence of matrix products and the theory of joint/generalized spectral radius.
+*Aa (permanently updated) annotated list of publications on the convergence of infinite matrix products and the rate of their growth/decrease as the number of factors tends to infinity.*
 
 - Bibliography format: HTML ([JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html)) or PDF ([JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf))
 - Project files, documentation: [JSRbib](https://github.com/kozyakin/JSRbib)
