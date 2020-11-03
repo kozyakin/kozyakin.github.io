@@ -4,7 +4,7 @@
 ## About me
 I am Victor Kozyakin, chief researcher at the Institute of Information Transmission Problems, Russian Academy of Science.
 
-More details see at [my Homepage](http://iitp.ru/en/users/46.htm)
+More details see at my [Home page](http://iitp.ru/en/users/46.htm)
 
 
 ---
