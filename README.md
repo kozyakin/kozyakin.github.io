@@ -9,7 +9,7 @@ I am Victor Kozyakin, chief researcher at the Institute of Information Transmiss
 
 An annotated bibliography on convergence of matrix products and the theory of joint/generalized spectral radius.
 
-*Bibliography in HTML [JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html) and PDF [JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf)
+- Bibliography in HTML [JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html) and PDF [JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf)
 
 
 
