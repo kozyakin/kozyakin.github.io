@@ -15,7 +15,7 @@ An annotated bibliography on convergence of matrix products and the theory of jo
 - Bibliography in HTML ([JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html)) and PDF ([JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf))
 - Project files, documentation: [JSRbib](https://github.com/kozyakin/JSRbib)
 
-## My links
+# My links
 
 - Home page [in English](http://iitp.ru/en/users/46.htm), [in Russian](http://iitp.ru/кг/users/46.htm)
 - [ArXiv](https://arxiv.org/a/kozyakin_v_1)
