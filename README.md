@@ -1,5 +1,12 @@
 ## Welcome to Victor Kozyakin GitHub Pages
 
+# About me
+I am Victor Kozyakin, chief researcher at the Institute of Information Transmission Problems, Russian Academy of Science [my Homepage](http://iitp.ru/en/users/46.htm)
+
+
+
+
+
 You can use the [editor on GitHub](https://github.com/kozyakin/kozyakin.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.[Библиография](https://kozyakin.github.io/jsrbib/jsrbib.html)  
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
