@@ -18,7 +18,14 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Bibliography format: HTML ([JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html)) or PDF ([JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf))
 - Project files, documentation: [JSRbib](https://github.com/kozyakin/JSRbib)
 
-  
+---
+### latex2html_via_tex4ht
+
+*Example to novices how to transform TeX file with plenty of mathematics to HTML.*
+
+- Example files format: HTML ([latex2html_via_tex4ht.html](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.html)) or PDF ([latex2html_via_tex4ht.pdf](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.pdf))
+- Project files, documentation: [latex2html_via_tex4ht](https://github.com/kozyakin/latex2html_via_tex4ht)
+
 ---
 ## My links
 
