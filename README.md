@@ -27,6 +27,15 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Project files, documentation: [latex2html_via_tex4ht](https://github.com/kozyakin/latex2html_via_tex4ht)
 
 ---
+### Студентам МФТИ (for MIPT students)
+
+*Рабочие материалы по по теории вращения векторных полей (степени отображения) в рамках курса для студентов базовой межфакультетской кафедры проблем передачи информации и анализа данных МФТИ при Институте проблем передачи информации РАН.*
+
+Working materials on the theory of rotation of vector fields (degree of mapping) as part of the course for students of the basic interfaculty department of information transfer problems and data analysis of the Moscow Institute of Physics and Technology at the Institute for Information Transfer Problems of the Russian Academy of Sciences (***in Russian!***)
+
+- Страница проекта (link to working files): [for_mipt_students](https://kozyakin.github.io/for_mipt_students)
+
+---
 ## My links
 
 - Homepage [in English](http://iitp.ru/en/users/46.htm), [in Russian](http://iitp.ru/ru/users/46.htm)
