@@ -103,11 +103,7 @@
         <div id="MAKbook" class="container-md"></div>
         <script src="assets/files/pdfobject.js"></script>
         <script>
-            var options = {
-                height: "720px",
-                pdfOpenParams: { view: 'FitH', page: '1' },
-                fallbackLink: = "<div style="border:2px solid red;">Увы! Этот браузер не поддерживает вложенные PDF. Для просмотра PDF Вам придется загрузить его: <a href='[url]'>Загрузить PDF</a></div>"; 
-				};
+            var options = { height: "720px", pdfOpenParams: { view: 'FitH', page: '1' }};
             PDFObject.embed("assets/files/vector_fields.pdf", "#MAKbook", options);
         </script>
         <div class="container-md">
