@@ -100,9 +100,12 @@
                 </li>
             </ol>
         </div>
-        <div class="container-md">
-            <iframe type="application/pdf" src="assets/files/vector_fields.pdf" width="100%" allowfullscreen height="640"></iframe>
-        </div>
+		<div id="MAKbook" class="container-md"></div>
+<script src="assets/files/pdfobject.js"></script>
+<script>
+var options = { height: "720px", pdfOpenParams: { view: 'FitH', page: '1' }};
+PDFObject.embed("assets/files/vector_fields.pdf", "#MAKbook", options);
+</script>
         <div class="container-md">
             <h4>Дополнительная литература</h4>
             <ul>
