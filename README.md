@@ -27,6 +27,13 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Project files, documentation: [latex2html_via_tex4ht](https://github.com/kozyakin/latex2html_via_tex4ht)
 
 ---
+### KVicTools
+
+*Here are collected some programs and scripts designed to configure support for the Russian language in *MikTeX*, *TeX Live* systems and the *WinEdt* editor.*
+
+- Project files, documentation: [KVicTools](https://github.com/kozyakin/KVicTools)
+
+---
 ### Студентам МФТИ (for MIPT students)
 
 *Рабочие материалы по по теории вращения векторных полей (степени отображения) в рамках курса для студентов базовой межфакультетской кафедры проблем передачи информации и анализа данных МФТИ при Институте проблем передачи информации РАН.*
