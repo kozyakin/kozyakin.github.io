@@ -15,7 +15,7 @@
    viewBox="0 0 155.93399 55.000076"
    version="1.1"
    id="svg4"
-   sodipodi:docname="github1.svg"
+   sodipodi:docname="my_cite_github_pages.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    inkscape:export-filename="C:\Users\Vitya\Downloads\github1.png"
    inkscape:export-xdpi="96"
@@ -28,7 +28,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,7 +57,8 @@
      fit-margin-left="0"
      fit-margin-right="18"
      fit-margin-bottom="0"
-     inkscape:object-paths="true" />
+     inkscape:object-paths="true"
+     inkscape:document-rotation="0" />
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#f2f2f2;stroke-width:0.26666667;stroke-miterlimit:4;stroke-dasharray:none"
      id="path856-0"
@@ -71,7 +72,7 @@
      style="fill:#000000;fill-opacity:1;stroke-width:0.19499;stroke:#ffffff;stroke-opacity:1" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.1873px;line-height:1.25;font-family:Verdana;-inkscape-font-specification:Verdana;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.204507"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.1873px;line-height:1.25;font-family:Verdana;-inkscape-font-specification:Verdana;fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.204507;"
      x="62.680313"
      y="22.167048"
      id="text877"
@@ -80,14 +81,14 @@
        id="tspan875"
        x="62.680313"
        y="22.167048"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.1873px;font-family:Verdana;-inkscape-font-specification:Verdana;fill:#666666;stroke-width:0.204507">My cite</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.1873px;font-family:Verdana;-inkscape-font-specification:Verdana;fill:#b3b3b3;stroke-width:0.204507;stroke:none;">My cite</tspan><tspan
        sodipodi:role="line"
        x="62.680313"
        y="36.151173"
        id="tspan879"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.1873px;font-family:Verdana;-inkscape-font-specification:Verdana;fill:#666666;stroke-width:0.204507">on GitHub Pages</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.1873px;font-family:Verdana;-inkscape-font-specification:Verdana;fill:#b3b3b3;stroke-width:0.204507;stroke:none;">on GitHub Pages</tspan></text>
   <rect
-     style="fill:none;fill-opacity:1;stroke:#808080;stroke-opacity:1;stroke-width:0.26666667;stroke-miterlimit:4;stroke-dasharray:none"
+     style="fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-opacity:1;stroke-width:0.26666667;stroke-miterlimit:4;stroke-dasharray:none"
      id="rect903"
      width="156.22005"
      height="54.771194"
