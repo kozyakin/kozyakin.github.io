@@ -28,7 +28,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -81,10 +81,10 @@
        id="tspan875"
        x="64.80529"
        y="21.886179"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Verdana;-inkscape-font-specification:Verdana;fill:#b3b3b3;stroke:none;stroke-width:0.204507">My cite</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Verdana;-inkscape-font-specification:Verdana;fill:#b3b3b3;stroke:none;stroke-width:0.204507">My website</tspan><tspan
        sodipodi:role="line"
        x="64.80529"
-       y="36.886181"
+       y="36.886177"
        id="tspan879"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Verdana;-inkscape-font-specification:Verdana;fill:#b3b3b3;stroke:none;stroke-width:0.204507">on GitHub Pages</tspan></text>
   <rect
