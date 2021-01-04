@@ -119,6 +119,7 @@ span.bar-css {text-decoration:overline;}
 table.tabular{border-collapse: collapse; border-spacing: 0;}  
 img.cdots{vertical-align:middle;}  
 .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}  
+.chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}  
 .index-item, .index-subitem, .index-subsubitem {display:block}  
 div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}  
 div.caption span.id{font-weight: bold; white-space: nowrap; }  
@@ -166,7 +167,7 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
 </style> 
 <meta name='src' content='JSRbib.tex' /> 
 <script>window.MathJax = { tex: { tags: "ams", inlineMath: [ ["\\\(","\\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams'] }, loader: { load: ['[tex]/color', '[tex]/ams'] } }; </script> 
- <script id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' async='async' type='text/javascript'></script>  
+ <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
  <script> window.MathJax = { tex: { tags: "ams", inlineMath: [ ["\\\(","\\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams', 'boldsymbol', 'newcommand', 'verb'] }, loader: { load: ['[tex]/color', '[tex]/ams', '[tex]/boldsymbol', '[tex]/newcommand', '[tex]/verb'] } }; </script> 
 </head><body>
    <div class='maketitle'>
@@ -180,8 +181,8 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
 <h2 class='titleHead'>An annotated bibliography<br />
 on convergence of matrix products and<br />
 the theory of joint/generalized spectral radius</h2>
-<div class='author'><span class='cmr-12'>Victor Kozyakin</span><span class='thank-mark'><a id='kt-1' href='#tk-1'><span class='tcrm-1200'>∗</span></a></span></div><br />
-<div class='date'><span class='cmr-12'>January 3, 2021</span></div>
+<div class='author'><span class='cmr-12'>Victor Kozyakin</span><span class='thank-mark'><a href='#tk-1' id='kt-1'><span class='tcrm-1200'>∗</span></a></span></div><br />
+<div class='date'><span class='cmr-12'>January 4, 2021</span></div>
    </div>
 <!-- l. 76 --><p class='indent'>   The proposed text is an attempt to create a (permanently updated) list of publications on the
 convergence of inﬁnite matrix products and the rate of their growth/decrease as the number of factors
@@ -4387,10 +4388,10 @@ related problems.
      for the spectral radius of a matrix \(A\in \mathbb {R}^{d\times d}\), then the outline of results obtained in this paper
      are:
          </p><ol class='enumerate1'>
-         <li id='x1-12001x' class='enumerate'><span class='cmti-10'>For the case</span> \(d=2\)<span class='cmti-10'>,</span> \(\boldsymbol {S}\) <span class='cmti-10'>is absolutely stable (i.e.,</span> \(\|S_{\sigma _{\!n}}\cdots S_{\sigma _{\!1}}\|\to 0\) <span class='cmti-10'>driven by all switching signals</span> \(\sigma \)<span class='cmti-10'>) if and only if</span>
+         <li class='enumerate' id='x1-12001x'><span class='cmti-10'>For the case</span> \(d=2\)<span class='cmti-10'>,</span> \(\boldsymbol {S}\) <span class='cmti-10'>is absolutely stable (i.e.,</span> \(\|S_{\sigma _{\!n}}\cdots S_{\sigma _{\!1}}\|\to 0\) <span class='cmti-10'>driven by all switching signals</span> \(\sigma \)<span class='cmti-10'>) if and only if</span>
          \(\rho (S_1),\rho (S_2)\) <span class='cmti-10'>and</span> \(\rho (S_1S_2)\) <span class='cmti-10'>all are less than</span> \(1\)<span class='cmti-10'>;</span>
          </li>
-         <li id='x1-12002x' class='enumerate'><span class='cmti-10'>For the case</span> \(d=3\)<span class='cmti-10'>,</span> \(\boldsymbol {S}\) <span class='cmti-10'>is absolutely stable if and only if</span> \(\rho (A)&lt;1\;\forall A\in \{S_1,S_2\}^\ell \) <span class='cmti-10'>for</span> \(\ell =1,2,3,4,5,6\)<span class='cmti-10'>, and</span> \(8\)<span class='cmti-10'>.</span></li></ol>
+         <li class='enumerate' id='x1-12002x'><span class='cmti-10'>For the case</span> \(d=3\)<span class='cmti-10'>,</span> \(\boldsymbol {S}\) <span class='cmti-10'>is absolutely stable if and only if</span> \(\rho (A)&lt;1\;\forall A\in \{S_1,S_2\}^\ell \) <span class='cmti-10'>for</span> \(\ell =1,2,3,4,5,6\)<span class='cmti-10'>, and</span> \(8\)<span class='cmti-10'>.</span></li></ol>
   <p class='bibitem-p'>This further implies that for any \(\boldsymbol {S}=\{S_1,S_2\}\subset \mathbb {R}^{d\times d}\) with the generalized spectral radius \(\rho (\boldsymbol {S})=1\) where \(d=2\) or \(3\), if \(\boldsymbol {S}\) has a
      common, but not strict in general, Lyapunov matrix, then \(\boldsymbol {S}\) possesses the spectral ﬁniteness
      property.
@@ -5592,11 +5593,11 @@ related problems.
      <a href='http://zbmath.org/?q=an%3A1372.93209'>Zbl 1372.93209</a>.
      </p><p class='bibitem-p'>   In this paper, there are shown the following two statements.
          </p><ol class='enumerate1'>
-         <li id='x1-12003x' class='enumerate'><span class='cmti-10'>A discrete-time Markovian jump linear system is uniformly exponentially stable if and
+         <li class='enumerate' id='x1-12003x'><span class='cmti-10'>A discrete-time Markovian jump linear system is uniformly exponentially stable if and
          </span><span class='cmti-10'>only if it is robustly periodically stable, by using a Gel’fand-Berger-Wang formula proved
          </span><span class='cmti-10'>here.</span>
          </li>
-         <li id='x1-12004x' class='enumerate'><span class='cmti-10'>A random linear ODE driven by a semiﬂow with closing by periodic orbits property is
+         <li class='enumerate' id='x1-12004x'><span class='cmti-10'>A random linear ODE driven by a semiﬂow with closing by periodic orbits property is
          </span><span class='cmti-10'>uniformly exponentially stable if and only if it is robustly periodically stable, by using
          </span><span class='cmti-10'>Shantao Liao’s perturbation technique and the semi-uniform ergodic theorems.</span></li></ol>
   <p class='bibitem-p'>The proofs involve ergodic theory in both of the above two cases. In addition, counterexamples are
@@ -8188,7 +8189,7 @@ related problems.
 </p>
    </div>
 <div class='footnotes'><p>
-   <a id='tk-1' href='#kt-1'><span class='thank-mark'><span class='tcrm-1000'>∗</span></span></a>Institute for Information Transmission Problems, Russian Academy of Sciences, Bolshoj Karetny
+   <a href='#kt-1' id='tk-1'><span class='thank-mark'><span class='tcrm-1000'>∗</span></span></a>Institute for Information Transmission Problems, Russian Academy of Sciences, Bolshoj Karetny
 lane 19, Moscow 127994 GSP-4, Russia. Email: <span class='cmtt-10'>kozyakin@iitp.ru</span></p>                         </div>
  
 </body> 
