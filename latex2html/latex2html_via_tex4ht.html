@@ -34,6 +34,7 @@ center { margin-top:1em; margin-bottom:1em; }
 td center { margin-top:0em; margin-bottom:0em; }  
 .Canvas { position:relative; }  
 img.math{vertical-align:middle;}  
+div.par-math-display, div.math-display{text-align:center;}  
 li p.indent { text-indent: 0em }  
 li p:first-child{ margin-top:0em; }  
 li p:last-child, li div:last-child { margin-bottom:0.5em; }  
@@ -121,21 +122,21 @@ p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom
 p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }  
 .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}  
 .subparagraphHead, .likesubparagraphHead { font-weight: bold;}  
-.quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}  
 .verse{white-space:nowrap; margin-left:2em}  
 div.maketitle {text-align:center;}  
 h2.titleHead{text-align:center;}  
 div.maketitle{ margin-bottom: 2em; }  
 div.author, div.date {text-align:center;}  
 div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }  
-.quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }  
-.abstract p {margin-left:5%; margin-right:5%;}  
+div.abstract p {margin-left:5%; margin-right:5%;}  
 div.abstract {width:100%;}  
+.abstracttitle{text-align:center;margin-bottom:1em;}  
 figure.float, div.figure {margin-left: auto; margin-right: auto;}  
 figure.float img, figure.figure img {display: block; margin-left: auto; margin-right: auto;}  
 figure.figure > p {text-align:center;}  
 figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}  
 figcaption.caption span.id{font-weight: bold; white-space: nowrap; }  
+.abstract{margin:1em;}  
 .equation td{text-align:center; }  
 .equation-star td{text-align:center; }  
 table.equation-star { width:100%; }  
@@ -160,8 +161,8 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
  --> 
 </style> 
 <meta name='src' content='latex2html_via_tex4ht.tex' /> 
-<script>window.MathJax = { tex: { tags: "ams", inlineMath: [ ["\\\(","\\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams'] }, loader: { load: ['[tex]/color', '[tex]/ams'] } }; </script> 
- <script type='text/javascript' id='MathJax-script' async='async' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js'></script>  
+<script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
+ <script async='async' type='text/javascript' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js'></script>  
  <script> window.MathJax = { tex: { tags: "ams", inlineMath: [ ["\\\(","\\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams', 'boldsymbol', 'newcommand', 'verb'] }, loader: { load: ['[tex]/color', '[tex]/ams', '[tex]/boldsymbol', '[tex]/newcommand', '[tex]/verb'] } }; </script> 
 </head><body>
    <div class='maketitle'>
@@ -174,7 +175,7 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
 
 <h2 class='titleHead'>My notes on how to use Tex4ht+MathJax</h2>
 <div class='author'><span class='cmr-12'>Victor Kozyakin</span></div><br />
-<div class='date'><span class='cmr-12'>November 5, 2020</span></div>
+<div class='date'><span class='cmr-12'>February 11, 2021</span></div>
    </div>
    <h3 class='sectionHead'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Call Command</h3>
 <!-- l. 24 --><p class='noindent'>My problem was to make a HTML ﬁle with plenty of mathematics from a LaTeX one. As a beginner, I
@@ -191,7 +192,7 @@ simplest way was to run the following command to process <span class='obeylines-
 
                                                                                  
 </p>
-   <pre class='verbatim' id='verbatim-1'>
+   <pre id='verbatim-1' class='verbatim'>
 make4ht -sc myconfig.cfg test.tex "0,mathjax,p-indent,charset=utf-8" " -cunihtf -utf8"
 </pre>
 <!-- l. 39 --><p class='nopar'> and after that, if one wants to embed into resulted <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.html</span></span></span> the css-ﬁle <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.css</span></span></span> generated during
@@ -200,7 +201,7 @@ previous command, one should issue one the following command
 
                                                                                  
 </p>
-   <pre class='verbatim' id='verbatim-2'>
+   <pre id='verbatim-2' class='verbatim'>
 htlatex test.tex "myconfig,html,0,mathjax,p-indent,charset=utf-8,css-in" " -cunihtf -utf8"
 </pre>
 <!-- l. 45 --><p class='nopar'> <span class='cmr-9'>or</span>
@@ -208,7 +209,7 @@ htlatex test.tex "myconfig,html,0,mathjax,p-indent,charset=utf-8,css-in" " -
 
                                                                                  
 </p>
-   <pre class='verbatim' id='verbatim-3'>
+   <pre id='verbatim-3' class='verbatim'>
 make4ht -sc myconfig.cfg -m draft test.tex "0,mathjax,p-indent,charset=utf-8,css-in" " -cunihtf -utf8"
 </pre>
 <!-- l. 49 --><p class='nopar'> where the conﬁg ﬁle <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>myconfig.cfg</span></span></span> is as follows
@@ -216,7 +217,7 @@ make4ht -sc myconfig.cfg -m draft test.tex "0,mathjax,p-indent,charset=utf
 
                                                                                  
 </p>
-   <pre class='verbatim' id='verbatim-4'>
+   <pre id='verbatim-4' class='verbatim'>
 \Preamble{xhtml,fn-in}
 
 \Css{body { margin:5\% 5\%; max-width:72em; ine-height:1.6; font-size:large;
@@ -268,7 +269,7 @@ will be invoked in math mode automatically (see the appropriate string in the co
 
                                                                                  
 </p>
-   <pre class='verbatim' id='verbatim-5'>
+   <pre id='verbatim-5' class='verbatim'>
 \begin{equation}
 \boldsymbol{f}(x)=1\label{eq}
 \end{equation}
@@ -302,7 +303,7 @@ needed to put in the preamble of tex ﬁle the following lines, before TikZ pack
 
                                                                                  
 </p>
-   <pre class='verbatim' id='verbatim-6'>
+   <pre id='verbatim-6' class='verbatim'>
 \ifdefined\HCode
    \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
 \fi
@@ -319,7 +320,7 @@ needed to put in the preamble of tex ﬁle the following lines, before TikZ pack
                                                                                  
 
                                                                                  
-<!-- l. 210 --><p class='noindent'>              <img alt='HHS˜Sxy1−1−1111SS˜ ' src='./latex2html_via_tex4ht0x.svg' />
+<!-- l. 210 --><p class='noindent'>              <img alt='HHS˜Sxy1−1−1111SS˜ ' src='latex2html_via_tex4ht0x.svg' />
 </p>
 <figcaption class='caption'><span class='id'>Figure 1:</span><span class='content'>Example of Stanford</span></figcaption><!-- tex4ht:label?: x1-30011  -->
                                                                                  
