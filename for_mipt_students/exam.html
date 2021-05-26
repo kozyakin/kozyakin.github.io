@@ -136,7 +136,7 @@
         //document.location.href = `mailto:Victor Kozyakin <kozyakin@gmail.com>?subject=Экзамен, ${lastname}&body=${body}%0A%0D%0A%0D%0AКонтрольный код: ${hash}`;
         Email.send({
             SecureToken : "226b522f-269e-4e1c-8af8-5bef42e31445",
-            To : 'kozyakin@gmail.com; kozyakin@iitp.ru',
+            To : 'kozyakin@iitp.ru',
             From : "kozyakin@iitp.ru",
             Subject : "Экзамен, " + lastname,
             Body : body + "<br><br><br>Контрольный код: " + hash
