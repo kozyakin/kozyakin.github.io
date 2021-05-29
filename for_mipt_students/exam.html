@@ -60,36 +60,6 @@
       var success = false;
       var numtask = 2;
       var body = '';
-/* SmtpJS.com - v3.0.0 */
-    var Email = {
-        send: function(a) {
-            return new Promise(function(n, e) {
-                a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send";
-                var t = JSON.stringify(a);
-                Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function(e) {
-                    n(e)
-                })
-            })
-        },
-        ajaxPost: function(e, n, t) {
-            var a = Email.createCORSRequest("POST", e);
-            a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function() {
-                var e = a.responseText;
-                null != t && t(e)
-            }, a.send(n)
-        },
-        ajax: function(e, n) {
-            var t = Email.createCORSRequest("GET", e);
-            t.onload = function() {
-                var e = t.responseText;
-                null != n && n(e)
-            }, t.send()
-        },
-        createCORSRequest: function(e, n) {
-            var t = new XMLHttpRequest;
-            return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t
-        }
-    };
       function getNumtask() {
         numtask = document.getElementById("mySelect").selectedIndex + 1;
       }
@@ -133,14 +103,7 @@
           body = body.replace(/\s+/g, ' ').trim();
           var hash = cyrb53(body).toString(16);
           //document.getElementById("info").innerHTML = "<b>"+ body + "</b>";
-        //document.location.href = `mailto:Victor Kozyakin <kozyakin@gmail.com>?subject=Экзамен, ${lastname}&body=${body}%0A%0D%0A%0D%0AКонтрольный код: ${hash}`;
-        Email.send({
-            SecureToken : "226b522f-269e-4e1c-8af8-5bef42e31445",
-            To : 'kozyakin@iitp.ru',
-            From : "kozyakin@iitp.ru",
-            Subject : "Экзамен, " + lastname,
-            Body : body + "<br><br><br>Контрольный код: " + hash
-        }).then(message => alert("Отправка уведомления экзаменатору: " + message));
+          document.location.href = `mailto:Victor Kozyakin <kozyakin@gmail.com>?subject=Экзамен, ${lastname}&body=${body}%0A%0D%0A%0D%0AКонтрольный код: ${hash}`;
         }
       }
       function getName() {
