@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html xml:lang='en-US' lang='en-US'> 
+<html lang='en-US' xml:lang='en-US'> 
 <head>
    <title>My notes on how to use Tex4ht+MathJax</title> 
 <meta charset='utf-8' /> 
@@ -37,7 +37,9 @@ img.math{vertical-align:middle;}
 div.par-math-display, div.math-display{text-align:center;}  
 li p.indent { text-indent: 0em }  
 li p:first-child{ margin-top:0em; }  
+li p:first-child{ margin-bottom; }  
 li p:last-child, li div:last-child { margin-bottom:0.5em; }  
+li p:first-child{ margin-bottom:0; }  
 li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }  
 .enumerate1 {list-style-type:decimal;}  
 .enumerate2 {list-style-type:lower-alpha;}  
@@ -133,9 +135,10 @@ div.abstract {width:100%;}
 .abstracttitle{text-align:center;margin-bottom:1em;}  
 figure.float, div.figure {margin-left: auto; margin-right: auto;}  
 figure.float img, figure.figure img {display: block; margin-left: auto; margin-right: auto;}  
-figure.figure > p {text-align:center;}  
+figure.figure {text-align:center;}  
 figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}  
 figcaption.caption span.id{font-weight: bold; white-space: nowrap; }  
+p + figcaption, img + figcaption{margin-top: 1em;}  
 .abstract{margin:1em;}  
 .equation td{text-align:center; }  
 .equation-star td{text-align:center; }  
@@ -162,7 +165,7 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
 </style> 
 <meta name='src' content='latex2html_via_tex4ht.tex' /> 
 <script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
- <script async='async' type='text/javascript' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js'></script>  
+ <script id='MathJax-script' async='async' type='text/javascript' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js'></script>  
  <script> window.MathJax = { tex: { tags: "ams", inlineMath: [ ["\\\(","\\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams', 'boldsymbol', 'newcommand', 'verb'] }, loader: { load: ['[tex]/color', '[tex]/ams', '[tex]/boldsymbol', '[tex]/newcommand', '[tex]/verb'] } }; </script> 
 </head><body>
    <div class='maketitle'>
@@ -175,17 +178,20 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
 
 <h2 class='titleHead'>My notes on how to use Tex4ht+MathJax</h2>
 <div class='author'><span class='cmr-12'>Victor Kozyakin</span></div><br />
-<div class='date'><span class='cmr-12'>February 11, 2021</span></div>
+<div class='date'><span class='cmr-12'>June 14, 2021</span></div>
    </div>
    <h3 class='sectionHead'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Call Command</h3>
 <!-- l. 24 --><p class='noindent'>My problem was to make a HTML ﬁle with plenty of mathematics from a LaTeX one. As a beginner, I
 immediately faced the following problems: </p>
      <ul class='itemize1'>
-     <li class='itemize'>How to run Tex4ht to get HTML ﬁle with mathematics?
-     </li>
-     <li class='itemize'>What to do to make proper referencing of mathematical formulas?
-     </li>
-     <li class='itemize'>How to cope with TikZ ﬁgures?</li></ul>
+     <li class='itemize'>
+     <!-- l. 27 --><p class='noindent'>How to run Tex4ht to get HTML ﬁle with mathematics?
+     </p></li>
+     <li class='itemize'>
+     <!-- l. 28 --><p class='noindent'>What to do to make proper referencing of mathematical formulas?
+     </p></li>
+     <li class='itemize'>
+     <!-- l. 29 --><p class='noindent'>How to cope with TikZ ﬁgures?</p></li></ul>
 <!-- l. 32 --><p class='indent'>   After a while I discovered that the most suitable way for me is to join Tex4ht with MatJax. And the
 simplest way was to run the following command to process <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.tex</span></span></span> ﬁle:
                                                                                  
@@ -320,7 +326,8 @@ needed to put in the preamble of tex ﬁle the following lines, before TikZ pack
                                                                                  
 
                                                                                  
-<!-- l. 210 --><p class='noindent'>              <img alt='HHS˜Sxy1−1−1111SS˜ ' src='latex2html_via_tex4ht0x.svg' />
+<!-- l. 158 --><p class='noindent'><img alt='HHS˜Sxy1−1−1111SS˜
+' src='latex2html_via_tex4ht0x.svg' />
 </p>
 <figcaption class='caption'><span class='id'>Figure 1:</span><span class='content'>Example of Stanford</span></figcaption><!-- tex4ht:label?: x1-30011  -->
                                                                                  
