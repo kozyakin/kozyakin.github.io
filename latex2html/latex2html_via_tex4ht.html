@@ -3,8 +3,8 @@
 <head>
    <title>My notes on how to use Tex4ht+MathJax</title> 
 <meta charset='utf-8' /> 
-<meta name='generator' content='TeX4ht (https://tug.org/tex4ht/)' /> 
-<meta name='viewport' content='width=device-width,initial-scale=1' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
  
 <style type='text/css'> 
 <!--   
@@ -163,9 +163,9 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
  
  --> 
 </style> 
-<meta name='src' content='latex2html_via_tex4ht.tex' /> 
+<meta content='latex2html_via_tex4ht.tex' name='src' /> 
 <script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
- <script id='MathJax-script' async='async' type='text/javascript' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js'></script>  
+ <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
  <script> window.MathJax = { tex: { tags: "ams", inlineMath: [ ["\\\(","\\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams', 'boldsymbol', 'newcommand', 'verb'] }, loader: { load: ['[tex]/color', '[tex]/ams', '[tex]/boldsymbol', '[tex]/newcommand', '[tex]/verb'] } }; </script> 
 </head><body>
    <div class='maketitle'>
@@ -178,27 +178,24 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
 
 <h2 class='titleHead'>My notes on how to use Tex4ht+MathJax</h2>
 <div class='author'><span class='cmr-12'>Victor Kozyakin</span></div><br />
-<div class='date'><span class='cmr-12'>June 14, 2021</span></div>
+<div class='date'><span class='cmr-12'>August 13, 2021</span></div>
    </div>
-   <h3 class='sectionHead'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Call Command</h3>
+   <h3 class='sectionHead' id='call-command'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Call Command</h3>
 <!-- l. 24 --><p class='noindent'>My problem was to make a HTML ﬁle with plenty of mathematics from a LaTeX one. As a beginner, I
 immediately faced the following problems: </p>
      <ul class='itemize1'>
-     <li class='itemize'>
-     <!-- l. 27 --><p class='noindent'>How to run Tex4ht to get HTML ﬁle with mathematics?
-     </p></li>
-     <li class='itemize'>
-     <!-- l. 28 --><p class='noindent'>What to do to make proper referencing of mathematical formulas?
-     </p></li>
-     <li class='itemize'>
-     <!-- l. 29 --><p class='noindent'>How to cope with TikZ ﬁgures?</p></li></ul>
+     <li class='itemize'>How to run Tex4ht to get HTML ﬁle with mathematics?
+     </li>
+     <li class='itemize'>What to do to make proper referencing of mathematical formulas?
+     </li>
+     <li class='itemize'>How to cope with TikZ ﬁgures?</li></ul>
 <!-- l. 32 --><p class='indent'>   After a while I discovered that the most suitable way for me is to join Tex4ht with MatJax. And the
 simplest way was to run the following command to process <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.tex</span></span></span> ﬁle:
                                                                                  
 
                                                                                  
 </p>
-   <pre id='verbatim-1' class='verbatim'>
+   <pre class='verbatim' id='verbatim-1'>
 make4ht -sc myconfig.cfg test.tex "0,mathjax,p-indent,charset=utf-8" " -cunihtf -utf8"
 </pre>
 <!-- l. 39 --><p class='nopar'> and after that, if one wants to embed into resulted <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.html</span></span></span> the css-ﬁle <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.css</span></span></span> generated during
@@ -207,7 +204,7 @@ previous command, one should issue one the following command
 
                                                                                  
 </p>
-   <pre id='verbatim-2' class='verbatim'>
+   <pre class='verbatim' id='verbatim-2'>
 htlatex test.tex "myconfig,html,0,mathjax,p-indent,charset=utf-8,css-in" " -cunihtf -utf8"
 </pre>
 <!-- l. 45 --><p class='nopar'> <span class='cmr-9'>or</span>
@@ -215,7 +212,7 @@ htlatex test.tex "myconfig,html,0,mathjax,p-indent,charset=utf-8,css-in" " -
 
                                                                                  
 </p>
-   <pre id='verbatim-3' class='verbatim'>
+   <pre class='verbatim' id='verbatim-3'>
 make4ht -sc myconfig.cfg -m draft test.tex "0,mathjax,p-indent,charset=utf-8,css-in" " -cunihtf -utf8"
 </pre>
 <!-- l. 49 --><p class='nopar'> where the conﬁg ﬁle <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>myconfig.cfg</span></span></span> is as follows
@@ -223,7 +220,7 @@ make4ht -sc myconfig.cfg -m draft test.tex "0,mathjax,p-indent,charset=utf
 
                                                                                  
 </p>
-   <pre id='verbatim-4' class='verbatim'>
+   <pre class='verbatim' id='verbatim-4'>
 \Preamble{xhtml,fn-in}
 
 \Css{body { margin:5\% 5\%; max-width:72em; ine-height:1.6; font-size:large;
@@ -261,7 +258,7 @@ window.MathJax = {
 <!-- l. 88 --><p class='nopar'>
 </p><!-- l. 90 --><p class='noindent'>
 </p>
-   <h3 class='sectionHead'><span class='titlemark'>2   </span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3>
+   <h3 class='sectionHead' id='how-to-reference-equations-in-texhtmathjax'><span class='titlemark'>2   </span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3>
 <!-- l. 91 --><p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they
 referenced sections, subsections and other structure element that are in <span class='cmbx-10'>text mode</span>, but when you are
 trying to reference the label of equation you are getting ???.
@@ -275,7 +272,7 @@ will be invoked in math mode automatically (see the appropriate string in the co
 
                                                                                  
 </p>
-   <pre id='verbatim-5' class='verbatim'>
+   <pre class='verbatim' id='verbatim-5'>
 \begin{equation}
 \boldsymbol{f}(x)=1\label{eq}
 \end{equation}
@@ -299,17 +296,17 @@ Example of references: we have equation \eqref{eq} from Sec. \ref{S1}.�
 </p><!-- l. 134 --><p class='indent'>   Here, the reference to <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\tag{OneIsNotOne Condition}</span></span></span> in previous equation is as follows:
 \(\mathrm {(\ref {E:mycond})}\)
 </p><!-- l. 140 --><p class='indent'>   \begin {align} a&amp;=1\label {A}\\ b&amp;=0\label {B} \end {align}
-</p><!-- l. 141 --><p class='indent'>   Example of references: we have equation \(\mathrm {(\ref {eq})}\) from Sec. <a href='#x1-10001'>1<!-- tex4ht:ref: S1  --></a>. Or \(\ref {A}\)-\(\mathrm {(\ref {B})}\).
+</p><!-- l. 141 --><p class='indent'>   Example of references: we have equation \(\mathrm {(\ref {eq})}\) from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or \(\ref {A}\)-\(\mathrm {(\ref {B})}\).
 </p><!-- l. 144 --><p class='noindent'>
 </p>
-   <h3 class='sectionHead'><span class='titlemark'>3   </span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3>
+   <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3   </span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3>
 <!-- l. 145 --><p class='noindent'>Tex4th supports TikZ, however, for correct displaying text and math symbols in TikZ picture, it is
 needed to put in the preamble of tex ﬁle the following lines, before TikZ package loading:
                                                                                  
 
                                                                                  
 </p>
-   <pre id='verbatim-6' class='verbatim'>
+   <pre class='verbatim' id='verbatim-6'>
 \ifdefined\HCode
    \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
 \fi
@@ -317,7 +314,7 @@ needed to put in the preamble of tex ﬁle the following lines, before TikZ pack
 <!-- l. 152 --><p class='nopar'>
 </p><!-- l. 154 --><p class='indent'>   Below is an example of using TikZ.
 </p>
-   <figure class='figure'> 
+   <figure class='figure' id='ignorespaces-example-of-stanford'> 
 
                                                                                  
 
