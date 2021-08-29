@@ -44,7 +44,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *Рабочие материалы по теории вращения векторных полей (степени отображения) в рамках курса для студентов базовой межфакультетской кафедры проблем передачи информации и анализа данных МФТИ при Институте проблем передачи информации РАН.*
 
-*Working materials on the theory of rotation of vector fields (degree of mapping) as part of the course for students of the Interfaculty Chair of information transmission problems and data analysis of the Moscow Institute of Physics and Technology at the Institute for Information Transmission Problems of the Russian Academy of Sciences (***in Russian!***)*
+*Working materials on the theory of rotation of vector fields (degree of mapping) as part of the course for students of the Interfaculty Chair of information transmission problems and data analysis of the Moscow Institute of Physics and Technology at the Institute for Information Transmission Problems of the Russian Academy of Sciences (**in Russian!**)*
 
 - Страница проекта (link to working files): [for_mipt_students](https://kozyakin.github.io/for_mipt_students)
 
