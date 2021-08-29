@@ -35,7 +35,6 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *Здесь собраны некоторые программы и скрипты, предназначенные для настройки поддержки русского языка в системах MikTeX, TeX Live и редакторе WinEdt.*
 
-
 *Here are collected some programs and scripts designed to configure support for the Russian language in MikTeX, TeX Live systems and the WinEdt editor.*
 
 - Страница проекта (link to working files): [KVicTools](https://github.com/kozyakin/KVicTools)
