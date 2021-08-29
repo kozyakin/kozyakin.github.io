@@ -13,6 +13,8 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 ### JSRbib
 
+*Постоянно обновляемый аннотированный список публикаций, посвященных анализу сходимости бесконечных матричных произведений и оценке их скорости роста/убывания при стремлении количества сомножителей к бесконечности.*
+
 *A permanently updated annotated list of publications on the convergence of infinite matrix products and the rate of their growth/decrease as the number of factors tends to infinity.*
 
 - Bibliography format: HTML ([JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html)) or PDF ([JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf))
@@ -20,6 +22,8 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 ---
 ### latex2html_via_tex4ht
+
+*Пример для новичков преобразования TeX-овского файла с множеством математики в HTML-файл.*
 
 *Example to novices how to transform TeX file with plenty of mathematics to HTML.*
 
