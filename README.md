@@ -15,7 +15,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *Постоянно обновляемый аннотированный список публикаций, посвященных анализу сходимости бесконечных матричных произведений и оценке их скорости роста/убывания при стремлении количества сомножителей к бесконечности.*
 
-*A permanently updated annotated list of publications on the convergence of infinite matrix products and the rate of their growth/decrease as the number of factors tends to infinity.*
+*A constantly updated annotated list of publications on the convergence of infinite matrix products and the rate of their growth/decrease as the number of factors tends to infinity.*
 
 - Bibliography format: HTML ([JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html)) or PDF ([JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf))
 - Project files, documentation: [JSRbib](https://github.com/kozyakin/JSRbib)
