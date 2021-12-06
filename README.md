@@ -40,6 +40,15 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Страница проекта (link to working files): [KVicTools](https://github.com/kozyakin/KVicTools)
 
 ---
+### BarNorm
+
+*Здесь собраны некоторые скрипты на языках MATLAB и Python, предназначенные для построения норм Барабанова наборов 2x2 матриц, а также вычисления связанных с ними характеристик.*
+
+*Here are collected some scripts in the MATLAB and Python languages for constructing Barabanov norms of sets of 2x2 matrices and computing the associated characteristics.*
+
+- Страница проекта (link to working files): [barnorm](https://github.com/kozyakin/barnorm)
+
+---
 ### Студентам МФТИ (for MIPT students)
 
 *Рабочие материалы по теории вращения векторных полей (степени отображения) в рамках курса для студентов базовой межфакультетской кафедры проблем передачи информации и анализа данных МФТИ при Институте проблем передачи информации РАН.*
