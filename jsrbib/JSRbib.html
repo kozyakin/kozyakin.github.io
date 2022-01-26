@@ -7,7 +7,169 @@ the theory of joint/generalized spectral radius</title>
 <meta charset='utf-8' /> 
 <meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
 <meta content='width=device-width,initial-scale=1' name='viewport' /> 
-<link href='JSRbib.css' rel='stylesheet' type='text/css' /> 
+ 
+<style type='text/css'> 
+<!--   
+ 
+/* start css.sty */  
+.cmbx-12x-x-144{font-size:172%; font-weight: bold;}  
+.cmbx-12x-x-144{ font-weight: bold;}  
+.cmbx-12x-x-144{ font-weight: bold;}  
+.cmr-12{font-size:120%;}  
+.cmbx-12{font-size:120%; font-weight: bold;}  
+.cmbx-12{ font-weight: bold;}  
+.cmbx-12{ font-weight: bold;}  
+.tcrm-1200{font-size:120%;}  
+.cmtt-10{font-family: monospace,monospace;}  
+.cmbx-10{ font-weight: bold;}  
+.cmbx-10{ font-weight: bold;}  
+.cmbx-10{ font-weight: bold;}  
+.cmti-10{ font-style: italic;}  
+.cmr-9{font-size:90%;}  
+p.noindent { text-indent: 0em }  
+td p.noindent { text-indent: 0em; margin-top:0em; }  
+p.nopar { text-indent: 0em; }  
+p.indent{ text-indent: 1.5em }  
+p{margin-top:0;margin-bottom:0}  
+p.noindent + p.noindent{margin-top:1em;}  
+a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; }  
+@media print {div.crosslinks {visibility:hidden;}}  
+table.tabular{border-collapse: collapse; border-spacing: 0;}  
+a img { border-top: 0; border-left: 0; border-right: 0; }  
+center { margin-top:1em; margin-bottom:1em; }  
+td center { margin-top:0em; margin-bottom:0em; }  
+.Canvas { position:relative; }  
+img.math{vertical-align:middle;}  
+div.par-math-display, div.math-display{text-align:center;}  
+li p.indent { text-indent: 0em }  
+li p:first-child{ margin-top:0em; }  
+li p:last-child, li div:last-child { margin-bottom:0.5em; }  
+li p:first-child{ margin-bottom:0; }  
+li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }  
+.enumerate1 {list-style-type:decimal;}  
+.enumerate2 {list-style-type:lower-alpha;}  
+.enumerate3 {list-style-type:lower-roman;}  
+.enumerate4 {list-style-type:upper-alpha;}  
+div.newtheorem { margin-bottom: 2em; margin-top: 2em;}  
+div.newtheorem .head{font-weight: bold;}  
+.obeylines-h,.obeylines-v {white-space: nowrap; }  
+div.obeylines-v p { margin-top:0; margin-bottom:0; }  
+.overline{ text-decoration:overline; }  
+.overline img{ border-top: 1px solid black; }  
+td.displaylines {text-align:center; white-space:nowrap;}  
+.centerline {text-align:center;}  
+.rightline {text-align:right;}  
+pre.verbatim {font-family: monospace,monospace; text-align:left; clear:both; }  
+.fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }  
+div.fbox {display:table}  
+div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }  
+div.minipage{width:100%;}  
+div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}  
+div.center div {text-align: left;}  
+div.flushright, div.flushright div.flushright {text-align: right;}  
+div.flushright div {text-align: left;}  
+div.flushleft {text-align: left;}  
+.underline{ text-decoration:underline; }  
+.underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }  
+.framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }  
+.framebox-c {text-align:center;}  
+.framebox-l {text-align:left;}  
+.framebox-r {text-align:right;}  
+span.thank-mark{ vertical-align: super }  
+span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }  
+div.footnotes{border-top:solid 1px black; border-bottom:solid 1px black; padding-bottom:1ex; padding-top:0.5ex; margin-right:15%; margin-top:2ex; font-style:italic; font-size:85%;}  
+div.footnotes p{margin-top:0; margin-bottom:0; text-indent:0;}  
+div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }  
+table.tabular td p{margin-top:0em;}  
+table.tabular {margin-left: auto; margin-right: auto;}  
+td p:first-child{ margin-top:0em; }  
+td p:last-child{ margin-bottom:0em; }  
+div.td00{ margin-left:0pt; margin-right:0pt; }  
+div.td01{ margin-left:0pt; margin-right:5pt; }  
+div.td10{ margin-left:5pt; margin-right:0pt; }  
+div.td11{ margin-left:5pt; margin-right:5pt; }  
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }  
+td.td00{ padding-left:0pt; padding-right:0pt; }  
+td.td01{ padding-left:0pt; padding-right:5pt; }  
+td.td10{ padding-left:5pt; padding-right:0pt; }  
+td.td11{ padding-left:5pt; padding-right:5pt; }  
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }  
+.hline hr, .cline hr{ height : 0px; margin:0px; }  
+.hline td, .cline td{ padding: 0; }  
+.hline hr, .cline hr{border:none;border-top:1px solid black;}  
+.hline {border-top: 1px solid black;}  
+.tabbing-right {text-align:right;}  
+div.float, div.figure {margin-left: auto; margin-right: auto;}  
+div.float img {text-align:center;}  
+div.figure img {text-align:center;}  
+.marginpar,.reversemarginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}  
+.marginpar p,.reversemarginpar p{margin-top:0.4em; margin-bottom:0.4em;}  
+.reversemarginpar{float:left;}  
+table.equation {width:100%;}  
+.equation td{text-align:center; }  
+td.equation { margin-top:1em; margin-bottom:1em; }  
+td.equation-label { width:5%; text-align:center; }  
+td.eqnarray4 { width:5%; white-space: normal; }  
+td.eqnarray2 { width:5%; }  
+table.eqnarray-star, table.eqnarray {width:100%;}  
+div.eqnarray{text-align:center;}  
+div.array {text-align:center;}  
+div.pmatrix {text-align:center;}  
+table.pmatrix {width:100%;}  
+span.pmatrix img{vertical-align:middle;}  
+div.pmatrix {text-align:center;}  
+table.pmatrix {width:100%;}  
+span.bar-css {text-decoration:overline;}  
+img.cdots{vertical-align:middle;}  
+.partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}  
+.chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}  
+.index-item, .index-subitem, .index-subsubitem {display:block}  
+div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}  
+div.caption span.id{font-weight: bold; white-space: nowrap; }  
+h1.partHead{text-align: center}  
+p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }  
+p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }  
+.paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}  
+.subparagraphHead, .likesubparagraphHead { font-weight: bold;}  
+.verse{white-space:nowrap; margin-left:2em}  
+div.maketitle {text-align:center;}  
+h2.titleHead{text-align:center;}  
+div.maketitle{ margin-bottom: 2em; }  
+div.author, div.date {text-align:center;}  
+div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }  
+div.abstract p {margin-left:5%; margin-right:5%;}  
+div.abstract {width:100%;}  
+.abstracttitle{text-align:center;margin-bottom:1em;}  
+figure.float, div.figure {margin-left: auto; margin-right: auto;}  
+figure.figure {text-align:center;}  
+figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}  
+figcaption.caption span.id{font-weight: bold; white-space: nowrap; }  
+p + figcaption, img + figcaption{margin-top: 1em;}  
+.abstract{margin:1em;}  
+.equation td{text-align:center; }  
+.equation-star td{text-align:center; }  
+table.equation-star { width:100%; }  
+table.equation { width:100%; }  
+table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: nowrap;}  
+table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}  
+td.align-label { width:5%; text-align:center; }  
+td.align-odd { text-align:right; padding-right:0.3em;}  
+td.align-even { text-align:left; padding-right:0.6em;}  
+table.multline, table.multline-star {width:100%;}  
+td.gather {text-align:center; }  
+table.gather {width:100%;}  
+div.gather-star {text-align:center;}  
+body { margin:5% 5%; max-width:72em; font-size:large; padding:0 40px;}  
+p.indent {text-indent:1.5em;}  
+.columns-3 p.indent {text-indent:0em;}  
+p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-bottom:0em; background:#F0F0F0; color:#000000;}  
+.columns-3 p:first-child { margin-top: 0em; }  
+.columns-3{-moz-column-count:3; -webkit-column-count:3; column-count:3; -moz-column-gap: 10.0pt; -webkit-column-gap: 10.0pt; column-gap: 10.0pt; -moz-column-rule-width: 0.0pt; -webkit-column-rule-width: 0.0pt; column-rule-rule-width: 0.0pt; -moz-column-rule-color: #555;; -webkit-column-rule-color: #555;; column-rule-color: #555;; -moz-column-rule-style: outset; -webkit-column-rule-style: outset; column-rule-style: outset; -moz-column-fill: balance; -webkit-column-fill: balance; column-fill: balance; }  
+/* end css.sty */  
+ 
+ 
+ --> 
+</style> 
 <meta content='JSRbib.tex' name='src' /> 
 <script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
@@ -25,7 +187,7 @@ the theory of joint/generalized spectral radius</title>
 on the convergence of matrix products and<br />
 the theory of joint/generalized spectral radius</h2>
 <div class='author'><span class='cmr-12'>Victor Kozyakin</span><span class='thank-mark'><a href='#tk-1' id='kt-1'><span class='tcrm-1200'>∗</span></a></span></div><br />
-<div class='date'><span class='cmr-12'>January 25, 2022</span></div>
+<div class='date'><span class='cmr-12'>January 26, 2022</span></div>
    </div>
 <!-- l. 80 --><p class='indent'>   The proposed text is an attempt to provide a (constantly updated) list of publications on the
 convergence of inﬁnite matrix products and the rate of their growth/decrease when the number of factors
