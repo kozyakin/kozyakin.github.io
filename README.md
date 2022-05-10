@@ -23,7 +23,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 ---
 ### latex2html_via_tex4ht
 
-*Пример для новичков преобразования TeX-овского файла с множеством математики в HTML-файл.*
+*Пример для новичков преобразования  TeX-овского файла с множеством математики в HTML-файл.*
 
 *Example to novices how to transform TeX file with plenty of mathematics to HTML.*
 
