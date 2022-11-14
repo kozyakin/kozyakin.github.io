@@ -56,6 +56,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 *Version 2.1.0 of the `footbib.sty` package was created in which, instead of hardcoded changes to LaTeX core, a dynamic "patch" of the appropriate locations in LaTeX core was implemented using the `\xpatxhcmd` mechanism from the `xpatch.sty` package (if desired, you can use the same commands from the `regexpatch.sty` package). We hope that this method of making changes to LaTeX core will be less sensitive to possible future changes to LaTeX.*
 
 - Страница проекта (link to working files): [footbib](https://github.com/kozyakin/footbib.sty-version-tolerant-to-LaTeX-output-routine-updates)
+
 ---
 ### Студентам МФТИ (for MIPT students)
 
