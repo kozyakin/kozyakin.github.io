@@ -49,11 +49,11 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Страница проекта (link to working files): [barnorm](https://github.com/kozyakin/barnorm)
 
 ---
-### footbib.sty version tolerant to LaTeX output routine updates
+### footbibx.sty - a version of footbib.sty tolerant to LaTeX output routine updates
 
-*Версия 2.1.0 пакета `footbib.sty`, в которой вместо "жестко зашитых" изменений в ядро LaTeX была реализована динамическая "заплатка" соответствующих мест в ядре LaTeX с помощью механизма `\xpatxhcmd` из пакета `xpatch.sty` (при желании, можно использовать те же команды из пакета `regexpatch.sty`). Надеюсь, что такой метод внесения изменений в ядро LaTeX будет менее чувствительным к потенциальным будущим изменениям LaTeX.*
+*Здесь представлена версия `footbibx.sty` пакета `footbib.sty`, в которой вместо "жестко зашитых" изменений в ядро LaTeX реализована динамическая "заплатка" соответствующих мест в ядре LaTeX с помощью механизма `\xpatxhcmd` из пакета `xpatch.sty` (при желании, можно использовать те же команды из пакета `regexpatch.sty`). Надеюсь, что такой метод внесения изменений в ядро LaTeX будет менее чувствительным к потенциальным будущим изменениям LaTeX.*
 
-*Version 2.1.0 of the `footbib.sty` package was created in which, instead of hardcoded changes to LaTeX core, a dynamic "patch" of the appropriate locations in LaTeX core was implemented using the `\xpatxhcmd` mechanism from the `xpatch.sty` package (if desired, you can use the same commands from the `regexpatch.sty` package). We hope that this method of making changes to LaTeX core will be less sensitive to possible future changes to LaTeX.*
+*Here, the modification `footbibx.sty` of the `footbib.sty` package is presented in which, instead of hardcoded changes to LaTeX core, a dynamic "patch" of the appropriate locations in LaTeX core is implemented using the `\xpatxhcmd` mechanism from the `xpatch.sty` package (if desired, you can use the same commands from the `regexpatch.sty` package). We hope that this method of making changes to LaTeX core will be less sensitive to possible future changes to LaTeX.*
 
 - Страница проекта (link to working files): [footbib](https://github.com/kozyakin/footbib.sty-version-tolerant-to-LaTeX-output-routine-updates)
 
