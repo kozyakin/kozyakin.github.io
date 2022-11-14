@@ -49,7 +49,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Страница проекта (link to working files): [barnorm](https://github.com/kozyakin/barnorm)
 
 ---
-### footbibx.sty - a version of footbib.sty tolerant to LaTeX output routine updates
+### footbibx
 
 *Здесь представлена версия `footbibx.sty` пакета `footbib.sty`, в которой вместо "жестко зашитых" изменений в ядро LaTeX реализована динамическая "заплатка" соответствующих мест в ядре LaTeX с помощью механизма `\xpatxhcmd` из пакета `xpatch.sty` (при желании, можно использовать те же команды из пакета `regexpatch.sty`). Надеюсь, что такой метод внесения изменений в ядро LaTeX будет менее чувствительным к потенциальным будущим изменениям LaTeX.*
 
