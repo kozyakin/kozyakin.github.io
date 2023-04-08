@@ -93,6 +93,8 @@ table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
 .hline td, .cline td{ padding: 0; }  
 .hline hr, .cline hr{border:none;border-top:1px solid black;}  
 .hline {border-top: 1px solid black;}  
+.hline + .vspace:last-child{display:none;}  
+.hline:first-child{border-bottom:1px solid black;border-top:none;}  
 .tabbing-right {text-align:right;}  
 div.float, div.figure {margin-left: auto; margin-right: auto;}  
 div.float img {text-align:center;}  
@@ -123,6 +125,7 @@ div.caption span.id{font-weight: bold; white-space: nowrap; }
 h1.partHead{text-align: center}  
 p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }  
 p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }  
+.subsubsectionHead, .likesubsubsectionHead { font-size: 1em; }  
 .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}  
 .subparagraphHead, .likesubparagraphHead { font-weight: bold;}  
 .verse{white-space:nowrap; margin-left:2em}  
@@ -166,59 +169,56 @@ p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-botto
 <meta content='latex2html_via_tex4ht.tex' name='src' /> 
 <script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
  <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
- <script> window.MathJax = { tex: { tags: "ams", inlineMath: [ ["\\\(","\\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams', 'boldsymbol', 'newcommand', 'verb'] }, loader: { load: ['[tex]/color', '[tex]/ams', '[tex]/boldsymbol', '[tex]/newcommand', '[tex]/verb'] } }; </script> 
+ <script> window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams', 'boldsymbol', 'newcommand', 'verb'] }, loader: { load: ['[tex]/color', '[tex]/ams', '[tex]/boldsymbol', '[tex]/newcommand', '[tex]/verb'] } }; </script> 
 </head><body>
    <div class='maketitle'>
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 <h2 class='titleHead'>My notes on how to use Tex4ht+MathJax</h2>
 <div class='author'><span class='cmr-12'>Victor Kozyakin</span></div><br />
-<div class='date'><span class='cmr-12'>November 10, 2021</span></div>
+<div class='date'><span class='cmr-12'>March 30, 2023</span></div>
    </div>
    <h3 class='sectionHead' id='call-command'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Call Command</h3>
-<!-- l. 24 --><p class='noindent'>My problem was to make a HTML ﬁle with plenty of mathematics from a LaTeX one. As a beginner, I
-immediately faced the following problems: </p>
+<!-- l. 24 --><p class='noindent'>My problem was to make a HTML ﬁle with plenty of mathematics from a LaTeX one. As a beginner, I immediately faced the following problems: </p>
      <ul class='itemize1'>
      <li class='itemize'>How to run Tex4ht to get HTML ﬁle with mathematics?
      </li>
      <li class='itemize'>What to do to make proper referencing of mathematical formulas?
      </li>
      <li class='itemize'>How to cope with TikZ ﬁgures?</li></ul>
-<!-- l. 32 --><p class='indent'>   After a while I discovered that the most suitable way for me is to join Tex4ht with MatJax. And the
-simplest way was to run the following command to process <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.tex</span></span></span> ﬁle:
-                                                                                 
+<!-- l. 32 --><p class='indent'>   After a while I discovered that the most suitable way for me is to join Tex4ht with MathJax. And the simplest way was to run the following command to process <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.tex</span></span></span> ﬁle:
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 </p>
    <pre class='verbatim' id='verbatim-1'>
 make4ht -sc myconfig.cfg test.tex "0,mathjax,p-indent,charset=utf-8" " -cunihtf -utf8"
 </pre>
-<!-- l. 39 --><p class='nopar'> and after that, if one wants to embed into resulted <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.html</span></span></span> the css-ﬁle <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.css</span></span></span> generated during
-previous command, one should issue one the following command
-                                                                                 
+<!-- l. 39 --><p class='nopar'> and after that, if one wants to embed into resulted <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.html</span></span></span> the css-ﬁle <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>test.css</span></span></span> generated during previous command, one should issue one the following command
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 </p>
    <pre class='verbatim' id='verbatim-2'>
 htlatex test.tex "myconfig,html,0,mathjax,p-indent,charset=utf-8,css-in" " -cunihtf -utf8"
 </pre>
 <!-- l. 45 --><p class='nopar'> <span class='cmr-9'>or</span>
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 </p>
    <pre class='verbatim' id='verbatim-3'>
 make4ht -sc myconfig.cfg -m draft test.tex "0,mathjax,p-indent,charset=utf-8,css-in" " -cunihtf -utf8"
 </pre>
 <!-- l. 49 --><p class='nopar'> where the conﬁg ﬁle <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>myconfig.cfg</span></span></span> is as follows
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 </p>
    <pre class='verbatim' id='verbatim-4'>
 \Preamble{xhtml,fn-in}
@@ -233,14 +233,11 @@ make4ht -sc myconfig.cfg -m draft test.tex "0,mathjax,p-indent,charset=utf
 \Configure{@HEAD}{\HCode{
 &lt;script&gt;
 window.MathJax = {
-    tex: {
-      tags: "ams",
-      \detokenize{%
-      inlineMath: [ ["\\\(","\\\)"] ],
-      displayMath: [ [’$$’,’$$’], ["\\[","\\]"] ],}
-      processEscapes: true,
-      processEnvironments: true,
-      packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’]
+  tex: {
+    tags: "ams",
+    processEscapes: true,
+    processEnvironments: true,
+    packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’]
   },
   loader: {
     load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’]
@@ -255,22 +252,16 @@ window.MathJax = {
 
 \EndPreamble
 </pre>
-<!-- l. 88 --><p class='nopar'>
-</p><!-- l. 90 --><p class='noindent'>
+<!-- l. 85 --><p class='nopar'>
+</p><!-- l. 87 --><p class='noindent'>
 </p>
    <h3 class='sectionHead' id='how-to-reference-equations-in-texhtmathjax'><span class='titlemark'>2   </span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3>
-<!-- l. 91 --><p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they
-referenced sections, subsections and other structure element that are in <span class='cmbx-10'>text mode</span>, but when you are
-trying to reference the label of equation you are getting ???.
-</p><!-- l. 96 --><p class='indent'>   The problem is turned out to be rather easily solvable: to reference labels of equations, align or other
-things in <span class='cmbx-10'>math mode </span>you should put the calling <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\eqref</span></span></span> or <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\ref</span></span></span> in a <span class='cmbx-10'>math environment</span>, e.g. by
-surrounding them by <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>$’s</span></span></span> or <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\(</span></span></span>…<span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\)</span></span></span>. Another way is to redeﬁne the command <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\eqref</span></span></span> in order that it
-will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle
-<span class='obeylines-h'><span class='verb'><span class='cmtt-10'>myconfig.cfg</span></span></span>.
-</p><!-- l. 104 --><p class='indent'>   So, for the LaTeX code below
-                                                                                 
+<!-- l. 88 --><p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='cmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.
+</p><!-- l. 93 --><p class='indent'>   The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='cmbx-10'>math mode </span>you should put the calling <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\eqref</span></span></span> or <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\ref</span></span></span> in a <span class='cmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>$’s</span></span></span> or <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\(</span></span></span>…<span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\)</span></span></span>. Another way is to redeﬁne the command <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\eqref</span></span></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>myconfig.cfg</span></span></span>.
+</p><!-- l. 101 --><p class='indent'>   So, for the LaTeX code below
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 </p>
    <pre class='verbatim' id='verbatim-5'>
 \begin{equation}
@@ -290,47 +281,54 @@ b&amp;=0\label{B}
 \end{align}
 Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{A}$-\eqref{B}.
 </pre>
-<!-- l. 123 --><p class='nopar'> we obtain the following output:
-</p><!-- l. 128 --><p class='indent'>   \begin {equation} \boldsymbol {f}(x)=1\label {eq} \end {equation}
-</p><!-- l. 132 --><p class='indent'>   \[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]
-</p><!-- l. 134 --><p class='indent'>   Here, the reference to <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\tag{OneIsNotOne Condition}</span></span></span> in previous equation is as follows:
-\(\mathrm {(\ref {E:mycond})}\)
-</p><!-- l. 140 --><p class='indent'>   \begin {align} a&amp;=1\label {A}\\ b&amp;=0\label {B} \end {align}
-</p><!-- l. 141 --><p class='indent'>   Example of references: we have equation \(\mathrm {(\ref {eq})}\) from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or \(\ref {A}\)-\(\mathrm {(\ref {B})}\).
-</p><!-- l. 144 --><p class='noindent'>
+<!-- l. 120 --><p class='nopar'> we obtain the following output:
+</p><!-- l. 125 --><p class='indent'>   \begin {equation}  \boldsymbol {f}(x)=1\label {eq}  \end {equation}<a id='x1-2001r1'></a>
+</p><!-- l. 129 --><p class='indent'>   \[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]
+</p><!-- l. 131 --><p class='indent'>   Here, the reference to <span class='obeylines-h'><span class='verb'><span class='cmtt-10'>\tag{OneIsNotOne Condition}</span></span></span> in previous equation is as follows: \(\mathrm {(\ref {E:mycond})}\)
+</p><!-- l. 137 --><p class='indent'>   \begin {align}  a&amp;=1\label {A}\\ b&amp;=0\label {B}  \end {align}
+</p><!-- l. 138 --><p class='indent'>   Example of references: we have equation \(\mathrm {(\ref {eq})}\) from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or \(\ref {A}\)-\(\mathrm {(\ref {B})}\).
+</p><!-- l. 141 --><p class='noindent'>
 </p>
    <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3   </span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3>
-<!-- l. 145 --><p class='noindent'>Tex4th supports TikZ, however, for correct displaying text and math symbols in TikZ picture, it is
-needed to put in the preamble of tex ﬁle the following lines, before TikZ package loading:
-                                                                                 
+<!-- l. 142 --><p class='noindent'>Tex4th supports TikZ, however, for correct displaying text and math symbols in TikZ picture, it is needed to put in the preamble of tex ﬁle the following lines, before TikZ package loading:
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 </p>
    <pre class='verbatim' id='verbatim-6'>
 \ifdefined\HCode
    \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
 \fi
 </pre>
-<!-- l. 152 --><p class='nopar'>
-</p><!-- l. 154 --><p class='indent'>   Below is an example of using TikZ.
+<!-- l. 149 --><p class='nopar'>
+</p><!-- l. 151 --><p class='indent'>   Below is an example of using TikZ.
 </p>
    <figure class='figure' id='-example-of-stanford'> 
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 <a id='x1-30011'></a>
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
-<!-- l. 158 --><p class='noindent'><img alt='HHS˜Sxy1−1−1111SS˜
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+<!-- l. 155 --><p class='noindent'><img alt='HHS˜Sxy1−1−1111SS˜
 ' src='latex2html_via_tex4ht0x.svg' />
 </p>
-<figcaption class='caption'><span class='id'>Figure 1:</span><span class='content'>Example of Stanford</span></figcaption><!-- tex4ht:label?: x1-30011  -->
-                                                                                 
+<figcaption class='caption'><span class='id'>Figure 1: </span><span class='content'>Example of Stanford</span></figcaption><!-- tex4ht:label?: x1-30011  -->
+                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                           
    </figure>
+<!-- l. 211 --><p class='indent'>   Citation example: <span class='cite'>[<a href='#XNDKKP:DSS96'>1</a>]</span>
+</p>
+   <h3 class='likesectionHead' id='references'><a id='x1-4000'></a>References</h3>
+<!-- l. 18 --><p class='noindent'>
+   </p><div class='thebibliography'>
+   <p class='bibitem'><span class='biblabel'>
+ [1]<span class='bibsp'>   </span></span><a id='XNDKKP:DSS96'></a>Al-Nayef A., Diamond P., Kloeden P. et al. Bi-shadowing and delay equations // Dynam. Stability Systems. 1996. Vol. 11, no. 2. P. 121–134.
+</p>
+   </div>
     
 </body> 
 </html>
