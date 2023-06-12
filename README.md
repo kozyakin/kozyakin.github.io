@@ -17,8 +17,8 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *A constantly updated annotated list of publications on the convergence of infinite matrix products and the rate of their growth/decrease as the number of factors tends to infinity.*
 
-- Bibliography format: HTML ([JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html)) or PDF ([JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf))
-- Project files, documentation: [JSRbib](https://github.com/kozyakin/JSRbib)
+- Библиография (bibliography): HTML ([JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html)) or PDF ([JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf))
+- Страница проекта (link to working files): [JSRbib](https://github.com/kozyakin/JSRbib)
 
 ---
 ### latex2html_via_tex4ht
@@ -27,8 +27,8 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *Example to novices how to transform TeX file with plenty of mathematics to HTML.*
 
-- Example files format: HTML ([latex2html_via_tex4ht.html](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.html)) or PDF ([latex2html_via_tex4ht.pdf](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.pdf))
-- Project files, documentation: [latex2html_via_tex4ht](https://github.com/kozyakin/latex2html_via_tex4ht)
+- Примеры (еxample files): HTML ([latex2html_via_tex4ht.html](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.html)) or PDF ([latex2html_via_tex4ht.pdf](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.pdf))
+- Страница проекта (link to working files): [latex2html_via_tex4ht](https://github.com/kozyakin/latex2html_via_tex4ht)
 
 ---
 ### KVicTools
