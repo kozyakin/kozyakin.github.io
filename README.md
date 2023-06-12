@@ -64,7 +64,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *Here, the modification `footbibx.sty` of the `footbib.sty` package is presented in which, instead of hardcoded changes to LaTeX core, a dynamic "patch" of the appropriate locations in LaTeX core is implemented using the `\xpatxhcmd` mechanism from the `xpatch.sty` package (if desired, you can use the same commands from the `regexpatch.sty` package). We hope that this method of making changes to LaTeX core will be less sensitive to possible future changes to LaTeX.*
 
-- Страница проекта (link to working files): [footbibx](https://github.com/kozyakin/footbibx)
+- Страница проекта (link to working files): [footbibx](https://github.com/kozyakin/kozyakin.github.io/tree/main/footbibx)
 
 ---
 ### Студентам МФТИ (for MIPT students)
