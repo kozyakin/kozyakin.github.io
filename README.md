@@ -17,7 +17,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *A constantly updated annotated list of publications on the convergence of infinite matrix products and the rate of their growth/decrease as the number of factors tends to infinity.*
 
-- Библиография (bibliography): HTML ([JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html)) or PDF ([JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf))
+- Библиография (bibliography): HTML ([JSRbib.html](https://kozyakin.github.io/jsrbib/JSRbib.html)) / PDF ([JSRbib.pdf](https://kozyakin.github.io/jsrbib/JSRbib.pdf))
 - Страница проекта (link to working files): [JSRbib](https://github.com/kozyakin/JSRbib)
 
 ---
@@ -27,7 +27,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *Example to novices how to transform TeX file with plenty of mathematics to HTML.*
 
-- Примеры (еxample files): HTML ([latex2html_via_tex4ht.html](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.html)) or PDF ([latex2html_via_tex4ht.pdf](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.pdf))
+- Примеры (еxample files): HTML ([latex2html_via_tex4ht.html](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.html)) / PDF ([latex2html_via_tex4ht.pdf](https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.pdf))
 - Страница проекта (link to working files): [latex2html_via_tex4ht](https://github.com/kozyakin/latex2html_via_tex4ht)
 
 ---
@@ -55,7 +55,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *When preparing manuscripts for publication in the vast majority (more than 150) of Russian mathematical journals, the portal [Math-Net.Ru](https://www.mathnet.ru/index.phtml?&option_lang=eng) recommends that the bibliography be formatted in the style of [AMSBIB](https://www.mathnet.ru/poffice/amsbibpackage.phtml?wshow=amsbibpackage&option_lang=eng). To simplify and unify the process of converting bibliography from the BibTeX format to the AMSBIB format, the style files `amsbib.bst` and `amsbibs.bst` are presented here, which perform such conversion automatically.*
 
-- Примеры (example files): [example.pdf](https://github.com/kozyakin/kozyakin.github.io/blob/main/bibtex_to_amsbib/example/example.pdf) (in Russian) or [example_en.pdf](https://github.com/kozyakin/kozyakin.github.io/blob/main/bibtex_to_amsbib/example/example_en.pdf) (in English}
+- Примеры (example files): [example.pdf](https://github.com/kozyakin/kozyakin.github.io/blob/main/bibtex_to_amsbib/example/example.pdf) (in Russian) / [example_en.pdf](https://github.com/kozyakin/kozyakin.github.io/blob/main/bibtex_to_amsbib/example/example_en.pdf) (in English}
 - Страница проекта (link to working files): [BibTeX to AMSBIB](https://github.com/kozyakin/kozyakin.github.io/tree/main/bibtex_to_amsbib)
 
 ---
