@@ -17,7 +17,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *A constantly updated annotated list of publications on the convergence of infinite matrix products and the rate of their growth/decrease as the number of factors tends to infinity.*
 
-- Библиография (bibliography): HTML ([JSRbib.html](./JSRbib.html)) / PDF ([JSRbib.pdf](./JSRbib.pdf))
+- Библиография (bibliography): HTML ([JSRbib.html](./jsrbib/JSRbib.html)) / PDF ([JSRbib.pdf](./jsrbib/JSRbib.pdf))
 - Страница проекта (link to working files): [JSRbib](https://github.com/kozyakin/JSRbib)
 
 ---
