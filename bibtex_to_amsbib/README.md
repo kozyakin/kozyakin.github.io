@@ -13,4 +13,4 @@ When preparing manuscripts for publication in the vast majority (more than 150) 
 
 To simplify and unify the process of converting bibliography from the BibTeX format to the AMSBIB format, the style files `amsbib.bst` and `amsbibs.bst` are presented here, which perform such conversion automatically, the first of which creates a list of AMSBIB bibliographic records in the order of citation of publications in the work, and the second one in alphabetical order.
 
-The [example](https://github.com/kozyakin/kozyakin.github.io/tree/main/bibtex_to_amsbib/example) folder contains the `example.tex` and `example_en.tex` files, which demonstrate the conversion of bibliography from BibTeX format to AMSBIB format.
+The [example](./example) folder contains the `example.tex` and `example_en.tex` files, which demonstrate the conversion of bibliography from BibTeX format to AMSBIB format.
