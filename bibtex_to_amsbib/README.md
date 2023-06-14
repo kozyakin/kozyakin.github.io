@@ -6,7 +6,10 @@
 Папка [example](./example) содержит файлы `example.tex` и `example_en.tex`, демонстрирующие преобразование библиографии из формата BibTeX в формат AMSBIB.
 
 
+
+
 ---
+
 
 
 When preparing manuscripts for publication in the vast majority (more than 150) of Russian mathematical journals, the portal [Math-Net.Ru](https://www.mathnet.ru/index.phtml?&option_lang=eng) recommends that the bibliography be formatted in the style of [AMSBIB](https://www.mathnet.ru/poffice/amsbibpackage.phtml?wshow=amsbibpackage&option_lang=eng).

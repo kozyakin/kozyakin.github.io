@@ -10,6 +10,10 @@
 
 
 
+---
+
+
+
 The package `footbib.sty` (Eric Domenjoud, last official version 2.0.7 on 2007/02/20) offered extensive possibilities for creating bibliographic references in the form of footnotes. Unfortunately, this package stopped working after an update of the LaTeX core in the middle of the second decade of the 2000s. The reason is that additions to the output routine of the LaTeX core were hardcoded into the `footbib.sty` package. Recommendations surfaced on the Internet to replace the `footbib.sty` package with the capabilities of the `biblatex.sty` package. However, in my opinion, none of these recommendations fully replaced the capabilities of the `footbib.sty` package.
 
 In this regard, I first made corrections to the `footbib.sty` package, taking into account the changes in LaTeX core as of 2022/11/11 (version 2.0.8). However, this type of change could cause future changes to the LaTeX core to cause this version of `footbib.sty` to stop working as well.
