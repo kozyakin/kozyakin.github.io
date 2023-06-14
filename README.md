@@ -56,7 +56,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 *When preparing manuscripts for publication in the vast majority (more than 150) of Russian mathematical journals, the portal [Math-Net.Ru](https://www.mathnet.ru/index.phtml?&option_lang=eng) recommends that the bibliography be formatted in the style of [AMSBIB](https://www.mathnet.ru/poffice/amsbibpackage.phtml?wshow=amsbibpackage&option_lang=eng). To simplify and unify the process of converting bibliography from the BibTeX format to the AMSBIB format, the style files `amsbib.bst` and `amsbibs.bst` are presented here, which perform such conversion automatically.*
 
 - Примеры (example files): [example.pdf](https://kozyakin.github.io/bibtex_to_amsbib/example/example.pdf) (in Russian) / [example_en.pdf](https://kozyakin.github.io/bibtex_to_amsbib/example/example_en.pdf) (in English}
-- Страница проекта (link to working files): [BibTeX to AMSBIB](./bibtex_to_amsbib)
+- Страница проекта (link to working files): [BibTeX to AMSBIB](https://github.com/kozyakin/kozyakin.github.io/tree/main/bibtex_to_amsbib)
 
 ---
 ### footbibx
@@ -65,7 +65,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *Here, the modification `footbibx.sty` of the `footbib.sty` package is presented in which, instead of hardcoded changes to LaTeX core, a dynamic "patch" of the appropriate locations in LaTeX core is implemented using the `\xpatxhcmd` mechanism from the `xpatch.sty` package (if desired, you can use the same commands from the `regexpatch.sty` package). We hope that this method of making changes to LaTeX core will be less sensitive to possible future changes to LaTeX.*
 
-- Страница проекта (link to working files): [footbibx](./footbibx)
+- Страница проекта (link to working files): [footbibx](https://github.com/kozyakin/kozyakin.github.io/tree/main/footbibx)
 
 ---
 ### Студентам МФТИ (for MIPT students)
@@ -74,7 +74,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *Working materials on the theory of rotation of vector fields (degree of mapping) as part of the course for students of the Interfaculty Chair of information transmission problems and data analysis of the Moscow Institute of Physics and Technology at the Institute for Information Transmission Problems of the Russian Academy of Sciences (**in Russian!**)*
 
-- Страница проекта (link to working files): [for_mipt_students](./for_mipt_students)
+- Страница проекта (link to working files): [for_mipt_students](https://github.com/kozyakin/kozyakin.github.io/tree/main/for_mipt_students)
 
 ---
 ## My links
