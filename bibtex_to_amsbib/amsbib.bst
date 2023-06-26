@@ -311,10 +311,8 @@ FUNCTION {fin.entry} { newline$ }
 FUNCTION {article} {
     start.entry
     "\by" author optional.name.field
-    "\paper " title optional.field
+    "\paper" title optional.field
     "\jour" journal optional.field
-    "\paperinfo" howpublished optional.field
-    "\publ" organization optional.field
     "\yr" year write.field
     "\vol" volume optional.field
     "\issue" number optional.field
@@ -328,10 +326,9 @@ FUNCTION {article} {
 FUNCTION {inproceedings} {
     start.entry
     "\by" author optional.name.field
-    "\paper " title optional.field
+    "\paper" title optional.field
     "\ed" editor optional.name.field
     "\inbook" booktitle optional.field
-    "\bookinfo" howpublished optional.field
     "\procinfo" organization optional.field
     "\bookvol" volume optional.field
     "\edition" edition optional.field
@@ -371,6 +368,23 @@ FUNCTION {book} {
         { "\publ" institution optional.field }
         { "\publ" organization optional.field }
     if$
+    "\publaddr" address optional.field
+    "\totalpages" pagetotal optional.field
+    "\arxiv" eprint optional.arxiv.field
+    url.mrnumber.note
+    fin.entry
+}
+
+FUNCTION {techreport} {
+    start.entry
+    "\by" author optional.name.field
+    "\preprint" title missing$ { booktitle } { title } if$
+      optional.field
+    "\preprintinfo" type optional.type.field
+    "\yr" year write.field
+    "\issue" number optional.field
+    "\monthissue" month optional.field
+    "\publ" institution optional.field
     "\publaddr" address optional.field
     "\totalpages" pagetotal optional.field
     "\arxiv" eprint optional.arxiv.field
