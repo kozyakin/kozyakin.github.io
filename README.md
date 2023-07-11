@@ -1,15 +1,16 @@
 # Welcome to Victor Kozyakin GitHub Pages
 
 ---
+
 ## About me
+
 I am Victor Kozyakin, Principal researcher at the Institute of Information Transmission Problems, Russian Academy of Science.
 
 More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
-
 ---
-## My projects
 
+## My projects
 
 ### JSRbib
 
@@ -21,6 +22,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Страница проекта (link to working files): [JSRbib](https://github.com/kozyakin/JSRbib)
 
 ---
+
 ### latex2html_via_tex4ht
 
 *Пример для новичков преобразования  TeX-овского файла с множеством математики в HTML-файл.*
@@ -31,6 +33,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Страница проекта (link to working files): [latex2html_via_tex4ht](https://github.com/kozyakin/latex2html_via_tex4ht)
 
 ---
+
 ### KVicTools
 
 *Здесь собраны некоторые программы и скрипты, предназначенные для настройки поддержки русского языка в системах MikTeX, TeX Live и редакторе WinEdt.*
@@ -40,6 +43,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Страница проекта (link to working files): [KVicTools](https://github.com/kozyakin/KVicTools)
 
 ---
+
 ### BarNorm
 
 *Здесь собраны некоторые скрипты на языках MATLAB и Python, предназначенные для построения норм Барабанова наборов 2x2 матриц, а также вычисления связанных с ними характеристик.*
@@ -48,7 +52,8 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 - Страница проекта (link to working files): [barnorm](https://github.com/kozyakin/barnorm)
 
-------
+---
+
 ### BibTeX to AMSBIB
 
 *При подготовке рукописей для публикации в подавляющем числе (более 150-и) российских журналов математической направленности портал [Math-Net.Ru](https://www.mathnet.ru/) рекомендует оформлять библиографию в стиле [AMSBIB](https://www.mathnet.ru/poffice/amsbibpackage.phtml?wshow=amsbibpackage&option_lang=rus). Чтобы упростить и унифицировать процесс преобразования библиографии из формата BibTeX в формат AMSBIB, здесь представлены стилевые файлы `amsbib.bst` и `amsbibs.bst`, осуществляющие такое преобразование автоматически.*
@@ -59,6 +64,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Страница проекта (link to working files): [BibTeX to AMSBIB](https://github.com/kozyakin/kozyakin.github.io/tree/main/bibtex_to_amsbib)
 
 ---
+
 ### footbibx
 
 *Здесь представлена версия `footbibx.sty` пакета `footbib.sty`, в которой вместо "жестко зашитых" изменений в ядро LaTeX реализована динамическая "заплатка" соответствующих мест в ядре LaTeX с помощью механизма `\xpatxhcmd` из пакета `xpatch.sty` (при желании, можно использовать те же команды из пакета `regexpatch.sty`). Надеюсь, что такой метод внесения изменений в ядро LaTeX будет менее чувствительным к потенциальным будущим изменениям LaTeX.*
@@ -68,6 +74,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Страница проекта (link to working files): [footbibx](https://github.com/kozyakin/kozyakin.github.io/tree/main/footbibx)
 
 ---
+
 ### Студентам МФТИ (for MIPT students)
 
 *Рабочие материалы по теории вращения векторных полей (степени отображения) в рамках курса для студентов базовой межфакультетской кафедры проблем передачи информации и анализа данных МФТИ при Институте проблем передачи информации РАН.*
@@ -77,6 +84,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 - Страница проекта (link to working files): [for_mipt_students](redir_to_mipt_page.html )
 
 ---
+
 ## My links
 
 - Homepage [in English](http://iitp.ru/en/users/46.htm), [in Russian](http://iitp.ru/ru/users/46.htm)
