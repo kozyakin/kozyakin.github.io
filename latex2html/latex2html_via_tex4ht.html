@@ -19,9 +19,9 @@
   .cmtt-9{font-size:90%;font-family: monospace,monospace;}  
   .cmtt-9{font-family: monospace,monospace;}  
   .cmbx-10{ font-weight: bold;}  
-  .cmti-10{ font-style: italic;}  
   .cmmi-9{font-size:90%;font-style: italic;}  
   .cmsy-9{font-size:90%;}  
+  .cmti-10{ font-style: italic;}  
   p.noindent { text-indent: 0em }  
   td p.noindent { text-indent: 0em; margin-top:0em; }  
   p.nopar { text-indent: 0em; }  
@@ -199,7 +199,7 @@
     <br>
 
     <div class='date'>
-      <span class='cmr-12'>October 10, 2023</span>
+      <span class='cmr-12'>October 11, 2023</span>
     </div>
   </div>
 
@@ -324,12 +324,10 @@ Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{
   <p class='nopar'>
   </p>
   <!-- l. 151 -->
-  <p class='indent'>With recent versions of <span class='cmtt-10'>GhostScript</span> (\(&gt;\)=10.02.0) in your LaTeX system and <span class='cmtt-10'>dvisvgm</span> (\(&lt;\)3.1.1), <span class='cmtt-10'>tex4th</span> creates a corrupted version of the <span class='cmtt-10'>svg</span> ﬁle, by including the following uncommented string (from <span class='cmtt-10'>GhostScript</span> output) in its ﬁrst lines: “<span class='cmti-10'>The old, written in PostScript, PDF interpreter has been removed entirely. You should cease using -dNEWDPF as it has no eﬀect n</span>”. This should be recovered when <span class='cmtt-10'>dvisvgm</span> version \(&gt;\)=3.1.1 will be installed in your LaTeX system. Until then, if it is your case and you will see no normal picture in the created html ﬁle, then <span class='cmbx-10'>this phrase must be removed manually in the generated svg ﬁle using any text editor so that this ﬁle to be displayed normally in the html output!</span></p>
-  <!-- l. 163 -->
   <p class='indent'>Below is an example of using TikZ.</p>
 
   <figure class='figure' id='-example-of-stanford'>
-    <a id='x1-30011'></a> <!-- l. 167 -->
+    <a id='x1-30011'></a> <!-- l. 155 -->
     <p class='noindent'><img alt='HHS˜Sxy1−1−1111SS˜ ' src='latex2html_via_tex4ht0x.svg'>
     </p>
 
@@ -338,10 +336,40 @@ Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{
     </figcaption>
     <!-- tex4ht:label?: x1-30011  -->
   </figure>
-  <!-- l. 223 -->
-  <p class='indent'>Citation example:&nbsp;<span class='cite'>[<a href='#XNDKKP:DSS96'>1</a>]</span></p>
+  <!-- l. 211 -->
+  <p class='indent'>Citation example:&nbsp;<span class='cite'>[<a href='#XNDKKP:DSS96'>1</a>]</span>.</p>
+  <!-- l. 214 -->
+  <p class='noindent'><span class='paragraphHead' id='remark'><a id='x1-4000'></a><span class='cmbx-10'>Remark</span></span> With recent versions of <span class='cmtt-10'>GhostScript</span> (\(&gt;\)=10.02.0) in your TeX system and <span class='cmtt-10'>dvisvgm</span> (\(&lt;\)3.1.1), <span class='cmtt-10'>tex4th</span> creates a corrupted version of the <span class='cmtt-10'>svg</span> ﬁle, by including the following uncommented string (from <span class='cmtt-10'>GhostScript</span> output) in its ﬁrst lines: “<span class='cmti-10'>The old, written in PostScript, PDF interpreter has been removed entirely. You should cease using -dNEWDPF as it has no eﬀect n</span>”. This should be recovered when <span class='cmtt-10'>dvisvgm</span> version \(&gt;\)=3.1.1 will be installed in your LaTeX system.</p>
+  <!-- l. 224 -->
+  <p class='indent'>One way to recover: If it is your case and you will see no normal picture in the created html ﬁle, then <span class='cmbx-10'>this string must be removed manually in the generated svg ﬁle using any text editor so that this ﬁle to be displayed normally in the html output!</span></p>
+  <!-- l. 229 -->
+  <p class='indent'>Another way to recover (until it will be recovered by creators of <span class='cmtt-10'>GhostScript</span> or <span class='cmtt-10'>dvisvgm</span>). Find the ﬁle <span class='obeylines-h verb cmtt-10'>pdf_main.ps</span> in your TeX system. For example, in TeXLive it is placed in the directory <span class='obeylines-h verb cmtt-10'>...\texlive\2023\tlpkg\tlgs\Resource\Init</span>. After that, replace in this ﬁle the following fragment of code:</p>
 
-  <h3 class='likesectionHead' id='references'><a id='x1-4000'></a>References</h3>
+  <pre class='verbatim' id='verbatim-7'>
+systemdict /NEWPDF known {
+  systemdict /NEWPDF get not {
+    (The old, written in PostScript, PDF interpreter has been removed entirely.\n) print
+    (You should cease using -dNEWDPF as it has no effect now.\n) print
+    (Continuing to process PDF file using the new, written in C, PDF interpreter.\n) print
+  } if
+} if
+</pre><!-- l. 243 -->
+  <p class='nopar'>with the following one:</p>
+
+  <pre class='verbatim' id='verbatim-8'>
+systemdict /NEWPDF known {
+  systemdict /NEWPDF get not {} if
+} if
+</pre><!-- l. 250 -->
+  <p class='nopar'>
+  </p>
+  <!-- l. 253 -->
+  <p class='indent'>After that, the spurious string in the generated <span class='cmtt-10'>svg</span> ﬁle disappears and this ﬁle will be happily accepted by the resulting <span class='cmtt-10'>html</span> ﬁle! □</p>
+  <!-- l. 18 -->
+  <p class='noindent'>
+  </p>
+
+  <h3 class='likesectionHead' id='references'><a id='x1-5000'></a>References</h3>
   <!-- l. 18 -->
   <p class='noindent'>
   </p>
