@@ -1,7 +1,9 @@
 %% This is file `amsbib.bst',
-%% to coinvert BibTex databases to AMSBIB referencing style in citation order
+%% to convert BibTex databases to AMSBIB referencing style in citation order
 %%
-%% Created by V.Kozyakin on 2023.06.06 by heavily modifying amsru.bst 
+%% Created by V.Kozyakin on 2023.06.06 by heavily modifying amsru.bst
+%% Modified on 2023.10.16
+%% email: kozyakin<at>iitp.ru
 %%
 %% This is file `amsru.bst',
 %% generated with the docstrip utility.
@@ -283,9 +285,11 @@ FUNCTION {url.mrnumber.note} {
     "\crossref{https://dx.doi.org/" doi optional.zbl.doi.field
     mrnumber missing.or.empty
       {skip$}
-      {"\mathscinet{https://www.ams.org/mathscinet-getitem?mr=" mrnumber optional.mr.field}
+      {"\mathscinet{https://www.ams.org/mathscinet-getitem?mr=" 
+        mrnumber optional.mr.field}
     if$
-    "\zmath{https://www.zentralblatt-math.org/zmath/search/?an=Zbl " zblnumber optional.zbl.doi.field
+    "\zmath{https://www.zentralblatt-math.org/zmath/search/?an=Zbl " 
+      zblnumber optional.zbl.doi.field
     url missing.or.empty
     {skip$}
     {  url "mi.mathnet.ru" is.contains
