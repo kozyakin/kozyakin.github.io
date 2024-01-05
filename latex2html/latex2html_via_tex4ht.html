@@ -193,52 +193,33 @@
 <body>
   <div class='maketitle'>
     <h2 class='titleHead'>My notes on how to use Tex4ht+MathJax</h2>
-
     <div class='author'>
       <span class='cmr-12'>Victor Kozyakin</span>
-    </div>
-    <br>
-
+    </div><br>
     <div class='date'>
-      <span class='cmr-12'>January 4, 2024</span>
+      <span class='cmr-12'>January 5, 2024</span>
     </div>
   </div>
-
-  <h3 class='sectionHead' id='call-command'><span class='titlemark'>1</span> <a id='x1-10001'></a>Call Command</h3>
-  <!-- l. 23 -->
-
+  <h3 class='sectionHead' id='call-command'><span class='titlemark'>1</span> <a id='x1-10001'></a>Call Command</h3><!-- l. 23 -->
   <p class='noindent'>My problem was to make a HTML ﬁle with plenty of mathematics from a LaTeX one. As a beginner, I immediately faced the following problems:</p>
-
   <ul class='itemize1'>
     <li class='itemize'>How to run Tex4ht to get HTML ﬁle with mathematics?</li>
-
     <li class='itemize'>What to do to make proper referencing of mathematical formulas?</li>
-
     <li class='itemize'>How to cope with TikZ ﬁgures?</li>
-  </ul>
-  <!-- l. 31 -->
-
+  </ul><!-- l. 31 -->
   <p class='indent'>After a while I discovered that the most suitable way for me is to join Tex4ht with MathJax. And the simplest way was to run the following command to process <span class='obeylines-h'><code class='verb'>test.tex</code></span> ﬁle:</p>
-
   <pre class='verbatim' id='verbatim-1'>
 make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 </pre><!-- l. 38 -->
-
   <p class='nopar'>and after that, if one wants to embed into resulted <span class='obeylines-h'><code class='verb'>test.html</code></span> the css-ﬁle <span class='obeylines-h'><code class='verb'>test.css</code></span> generated during previous command, one should issue one the following command</p>
-
   <pre class='verbatim' id='verbatim-2'>
 htlatex test.tex "myconfig" " -cunihtf -utf8"
 </pre><!-- l. 44 -->
-
-  <p class='nopar'><span class='cmr-9'>or once more</span>
-  </p>
-
+  <p class='nopar'><span class='cmr-9'>or once more</span></p>
   <pre class='verbatim' id='verbatim-3'>
 make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 </pre><!-- l. 48 -->
-
   <p class='nopar'>where the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span> is as follows</p>
-
   <pre class='verbatim' id='verbatim-4'>
 \Preamble{xhtml,html5,0,mathjax,p-indent,charset=utf-8,css-in,fn-in}
 \textwidth=2160pt
@@ -271,25 +252,12 @@ window.MathJax = {
 
 \EndPreamble
 </pre><!-- l. 84 -->
-
-  <p class='nopar'>
-  </p>
-  <!-- l. 86 -->
-
-  <p class='noindent'>
-  </p>
-
-  <h3 class='sectionHead' id='how-to-reference-equations-in-texhtmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3>
-  <!-- l. 87 -->
-
-  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='cmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p>
-  <!-- l. 92 -->
-
-  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='cmbx-10'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='cmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p>
-  <!-- l. 100 -->
-
+  <p class='nopar'></p><!-- l. 86 -->
+  <p class='noindent'></p>
+  <h3 class='sectionHead' id='how-to-reference-equations-in-texhtmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 87 -->
+  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='cmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 92 -->
+  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='cmbx-10'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='cmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 100 -->
   <p class='indent'>So, for the LaTeX code below</p>
-
   <pre class='verbatim' id='verbatim-5'>
 \begin{equation}
 \boldsymbol{f}(x)=1\label{eq}
@@ -308,69 +276,33 @@ b&amp;=0\label{B}
 \end{align}
 Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{A}$-\eqref{B}.
 </pre><!-- l. 119 -->
-
-  <p class='nopar'>we obtain the following output:</p>
-  <!-- l. 124 -->
-
-  <p class='indent'>\begin {equation} \boldsymbol {f}(x)=1\label {eq} \end {equation}<a id='x1-2001r1'></a></p>
-  <!-- l. 128 -->
-
-  <p class='indent'>\[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]</p>
-  <!-- l. 130 -->
-
-  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: \(\mathrm {(\ref {E:mycond})}\)</p>
-  <!-- l. 136 -->
-
-  <p class='indent'>\begin {align} a & =1\label {A} \\ b & =0\label {B} \end {align}</p>
-  <!-- l. 137 -->
-
-  <p class='indent'>Example of references: we have equation \(\mathrm {(\ref {eq})}\) from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or \(\ref {A}\)-\(\mathrm {(\ref {B})}\).</p>
-  <!-- l. 140 -->
-
-  <p class='noindent'>
-  </p>
-
-  <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3>
-  <!-- l. 141 -->
-
+  <p class='nopar'>we obtain the following output:</p><!-- l. 124 -->
+  <p class='indent'>\begin {equation} \boldsymbol {f}(x)=1\label {eq} \end {equation}<a id='x1-2001r1'></a></p><!-- l. 128 -->
+  <p class='indent'>\[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]</p><!-- l. 130 -->
+  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: \(\mathrm {(\ref {E:mycond})}\)</p><!-- l. 136 -->
+  <p class='indent'>\begin {align} a & =1\label {A} \\ b & =0\label {B} \end {align}</p><!-- l. 137 -->
+  <p class='indent'>Example of references: we have equation \(\mathrm {(\ref {eq})}\) from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or \(\ref {A}\)-\(\mathrm {(\ref {B})}\).</p><!-- l. 140 -->
+  <p class='noindent'></p>
+  <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3><!-- l. 141 -->
   <p class='noindent'>Tex4th supports TikZ, however, for correct displaying text and math symbols in TikZ picture, it is needed to put in the preamble of tex ﬁle the following lines, before TikZ package loading:</p>
-
   <pre class='verbatim' id='verbatim-6'>
 \ifdefined\HCode
    \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
 \fi
 </pre><!-- l. 148 -->
-
-  <p class='nopar'>
-  </p>
-  <!-- l. 150 -->
-
+  <p class='nopar'></p><!-- l. 150 -->
   <p class='indent'>Below is an example of using TikZ.</p>
-
   <figure class='figure' id='-example-of-stanford'>
     <a id='x1-30011'></a> <!-- l. 155 -->
-
-    <p class='noindent'><img alt='˜ ˜ HHSSxy1−1−1111SS ' src='latex2html_via_tex4ht0x.svg'>
-    </p>
-
+    <p class='noindent'><img alt='˜ ˜ HHSSxy1−1−1111SS ' src='latex2html_via_tex4ht0x.svg'></p>
     <figcaption class='caption'>
       <span class='id'>Figure&nbsp;1:</span> <span class='content'>Example of Stanford</span>
-    </figcaption>
-    <!-- tex4ht:label?: x1-30011  -->
-  </figure>
-  <!-- l. 212 -->
-
-  <p class='indent'>Citation example:&nbsp;<span class='cite'>[<a href='#XNDKKP:DSS96'>1</a>]</span>.</p>
-  <!-- l. 215 -->
-
-  <p class='noindent'><span class='paragraphHead' id='remark'><a id='x1-4000'></a><span class='cmbx-10'>Remark</span></span> With recent versions of <span class='cmtt-10'>GhostScript</span> (\(&gt;\)=10.02.0) in your TeX system and <span class='cmtt-10'>dvisvgm</span> (\(&lt;\)3.1.1), <span class='cmtt-10'>tex4th</span> creates a corrupted version of the <span class='cmtt-10'>svg</span> ﬁle, by including the following uncommented string (from <span class='cmtt-10'>GhostScript</span> output) in its ﬁrst lines: “<span class='cmti-10'>The old, written in PostScript, PDF interpreter has been removed entirely. You should cease using -dNEWDPF as it has no eﬀect n</span>”. This should be recovered when <span class='cmtt-10'>dvisvgm</span> version \(&gt;\)=3.1.1 will be installed in your LaTeX system.</p>
-  <!-- l. 225 -->
-
-  <p class='indent'>One way to recover: If it is your case and you will see no normal picture in the created html ﬁle, then <span class='cmbx-10'>this string must be removed manually in the generated svg ﬁle using any text editor so that this ﬁle to be displayed normally in the html output!</span></p>
-  <!-- l. 230 -->
-
+    </figcaption><!-- tex4ht:label?: x1-30011  -->
+  </figure><!-- l. 212 -->
+  <p class='indent'>Citation example:&nbsp;<span class='cite'>[<a href='#XNDKKP:DSS96'>1</a>]</span>.</p><!-- l. 215 -->
+  <p class='noindent'><span class='paragraphHead' id='remark'><a id='x1-4000'></a><span class='cmbx-10'>Remark</span></span> With recent versions of <span class='cmtt-10'>GhostScript</span> (\(&gt;\)=10.02.0) in your TeX system and <span class='cmtt-10'>dvisvgm</span> (\(&lt;\)3.1.1), <span class='cmtt-10'>tex4th</span> creates a corrupted version of the <span class='cmtt-10'>svg</span> ﬁle, by including the following uncommented string (from <span class='cmtt-10'>GhostScript</span> output) in its ﬁrst lines: “<span class='cmti-10'>The old, written in PostScript, PDF interpreter has been removed entirely. You should cease using -dNEWDPF as it has no eﬀect n</span>”. This should be recovered when <span class='cmtt-10'>dvisvgm</span> version \(&gt;\)=3.1.1 will be installed in your LaTeX system.</p><!-- l. 225 -->
+  <p class='indent'>One way to recover: If it is your case and you will see no normal picture in the created html ﬁle, then <span class='cmbx-10'>this string must be removed manually in the generated svg ﬁle using any text editor so that this ﬁle to be displayed normally in the html output!</span></p><!-- l. 230 -->
   <p class='indent'>Another way to recover (until it will be recovered by creators of <span class='cmtt-10'>GhostScript</span> or <span class='cmtt-10'>dvisvgm</span>). Find the ﬁle <span class='obeylines-h'><code class='verb'>pdf_main.ps</code></span> in your TeX system. For example, in TeXLive it is placed in the directory <span class='obeylines-h'><code class='verb'>...\texlive\2023\tlpkg\tlgs\Resource\Init</code></span>. After that, replace in this ﬁle the following fragment of code:</p>
-
   <pre class='verbatim' id='verbatim-7'>
 systemdict /NEWPDF known {
   systemdict /NEWPDF get not {
@@ -380,31 +312,17 @@ systemdict /NEWPDF known {
   } if
 } if
 </pre><!-- l. 244 -->
-
   <p class='nopar'>with the following one:</p>
-
   <pre class='verbatim' id='verbatim-8'>
 systemdict /NEWPDF known {
   systemdict /NEWPDF get not {} if
 } if
 </pre><!-- l. 251 -->
-
-  <p class='nopar'>
-  </p>
-  <!-- l. 253 -->
-
-  <p class='indent'>After that, the spurious string in the generated <span class='cmtt-10'>svg</span> ﬁle disappears and this ﬁle will be happily accepted by the resulting <span class='cmtt-10'>html</span> ﬁle! □</p>
-  <!-- l. 18 -->
-
-  <p class='noindent'>
-  </p>
-
-  <h3 class='likesectionHead' id='references'><a id='x1-5000'></a>References</h3>
-  <!-- l. 18 -->
-
-  <p class='noindent'>
-  </p>
-
+  <p class='nopar'></p><!-- l. 253 -->
+  <p class='indent'>After that, the spurious string in the generated <span class='cmtt-10'>svg</span> ﬁle disappears and this ﬁle will be happily accepted by the resulting <span class='cmtt-10'>html</span> ﬁle! □</p><!-- l. 18 -->
+  <p class='noindent'></p>
+  <h3 class='likesectionHead' id='references'><a id='x1-5000'></a>References</h3><!-- l. 18 -->
+  <p class='noindent'></p>
   <div class='thebibliography'>
     <p class='bibitem'><span class='biblabel'>[1]<span class='bibsp'>&nbsp;&nbsp;&nbsp;</span></span><a id='XNDKKP:DSS96'></a>Al-Nayef&nbsp;A., Diamond&nbsp;P., Kloeden&nbsp;P. et&nbsp;al. Bi-shadowing and delay equations&nbsp;// Dynam. Stability Systems. 1996. Vol.&nbsp;11, no.&nbsp;2. P.&nbsp;121–134.</p>
   </div>
