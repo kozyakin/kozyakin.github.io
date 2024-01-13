@@ -11,10 +11,13 @@
 % You may also process this file in EVERY system with ARARA by running
 % the following command in cmd/terminal: arara ExtremeBarNorms-ru
 %
+% arara: clean: { extensions: [ aux, bbl, bcf, blg, out, log, run.xml, synctex, synctex.gz, toc ] }
 % arara: pdflatex: {draft: yes, shell: yes}
-% arara: bibtexu: {options: ['-H', '-l', 'ru', '-o', 'ru']}
+% arara: biber if exists('bcf')
+% arara: bibtexu: {options: ['-H', '-l', 'ru', '-o', 'ru']} if found('aux','bibdata') && !exists('bcf')
 % arara: pdflatex: {shell: yes, synctex: yes}
 % arara: --> until !found('log', '\\(?(R|r)e\\)?run (to get|LaTeX)')
+% arara: clean: { extensions: [ aux, bbl, bcf, blg, out, log, run.xml, synctex, synctex.gz, toc ] }
 %
 \documentclass[a4paper]{article}
 \usepackage[T1,T2A]{fontenc}
@@ -73,7 +76,6 @@ e-mail: \href{mailto:kozyakin@iitp.ru}{kozyakin@iitp.ru}}}
 При этом сама библиография (созданная с помощью пакета \texttt{amsbib.sty}) как вставляется в pdf-файл, создаваемый при трансляции tex-файла, так и помещается в файл \texttt{<имя файла>.bbl}, генерируемый при трансляции tex-файла.
 
 Подчеркнем, что при этом как файл библиографии \texttt{.bib}, так и использующий его tex-файл должны быть в одной кодировке. Например, в данной работе использовалась кодировка \texttt{utf8}. При этом, в случае использования кодировок \texttt{cp866} или \texttt{cp1251}, для обработки библиографии должна применяться программа \texttt{bibtex8}, а при использования кодировки \texttt{utf8} --- программа \texttt{bibtexu}.
-
 
 Предлагаемые стилевые файлы \texttt{amsbib.bst} и \texttt{amsbibs.bst} далеки от совершенства --- это лишь первая попытка в данном направлении. Поэтому \textbf{рекомендуется полученный в результате список библиографических записей в формате AMSBIB тщательно проверить и, при необходимости, откорректировать вручную.}
 
@@ -168,7 +170,6 @@ e-mail: \href{mailto:kozyakin@iitp.ru}{kozyakin@iitp.ru}}}
 \pages 620--628
 \crossref{https://dx.doi.org/10.1109/72.501720}
 \elink{\url{ https://ieeexplore.ieee.org/document/501720}}
-
 
 \Bibitem{ChadKra:APM2:97}
 \by J.~Ch{\k{a}}dzy{\'n}ski, T.~Krasi{\'n}ski
