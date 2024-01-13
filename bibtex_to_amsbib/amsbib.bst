@@ -408,8 +408,6 @@ FUNCTION {proceedings} { book }
 
 FUNCTION {collection} { book }
 
-FUNCTION {techreport} { book }
-
 FUNCTION {unpublished} { book }
 
 FUNCTION {misc} { book }
