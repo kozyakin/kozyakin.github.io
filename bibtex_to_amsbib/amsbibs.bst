@@ -466,7 +466,7 @@ FUNCTION {sort.warning} {
 FUNCTION {author.sort}
 { author empty$
     { key empty$
-        { "\by" sort.warning
+        { "author" sort.warning
           ""
         }
         { key sortify }
