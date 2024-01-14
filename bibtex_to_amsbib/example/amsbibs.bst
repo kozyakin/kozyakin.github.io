@@ -1,9 +1,16 @@
-%% This is file `amsbibs.bst',
-%% to convert BibTex databases to AMSBIB referencing style in alphabetic order
+%% filename: amsbibs.bst
+%% date: 2024/01/14
 %%
-%% Created by V.Kozyakin on 2023.06.06 by heavily modifying amsrn.bst 
-%% Modified on 2023.10.16
+%% This is file `amsbibs.bst',
+%% to convert BibTex databases to AMSBIB referencing style in citation order
+%%
+%% Created  on 2023.06.06 by V.Kozyakin, by heavily modifying amsrn.bst
 %% email: kozyakin<at>iitp.ru
+%% 
+%% Modified on 2024.01.14 by changing the sort rules to automatically create 
+%% substitution for an empty or missing key field to reject possible excessive 
+%% warnings.
+
 %%
 %% This is file `amsrn.bst',
 %% generated with the docstrip utility.

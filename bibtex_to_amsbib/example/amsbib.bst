@@ -1,9 +1,13 @@
+%% filename: amsbib.bst
+%% date: 2023/10/16
+%%
 %% This is file `amsbib.bst',
 %% to convert BibTex databases to AMSBIB referencing style in citation order
 %%
-%% Created by V.Kozyakin on 2023.06.06 by heavily modifying amsru.bst
-%% Modified on 2023.10.16
+%% Created  on 2023.06.06 by V.Kozyakin, by heavily modifying amsru.bst
 %% email: kozyakin<at>iitp.ru
+%%
+%% Modified on 2023.10.16
 %%
 %% This is file `amsru.bst',
 %% generated with the docstrip utility.
