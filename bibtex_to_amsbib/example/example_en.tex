@@ -7,6 +7,18 @@
 % !BIB Exe = bibtexu
 % !BIB Opt = -H -l ru -o ru
 %-------------------------------------------------------------------
+% You may also process this file in EVERY system with ARARA by running
+% the following command in cmd/terminal: arara example-en.tex
+%
+% arara: clean: { extensions: [ aux, bbl, bcf, blg, out, log, run.xml, synctex, synctex.gz, toc ] }
+% arara: pdflatex: {draft: yes, shell: yes}
+% arara: biber if exists('bcf')
+% arara: bibtexu: {options: ['-H', '-l', 'ru', '-o', 'ru']} if found('aux','bibdata') && !exists('bcf')
+% arara: pdflatex: {shell: yes, synctex: yes}
+% arara: --> until !found('log', '\\(?(R|r)e\\)?run (to get|LaTeX)')
+% arara: clean: { extensions: [ aux, bbl, bcf, blg, out, log, run.xml, synctex, synctex.gz, toc ] }
+%
+
 \documentclass[a4paper]{article}
 \usepackage[T1,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
