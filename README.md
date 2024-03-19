@@ -88,7 +88,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 ## My links
 
 - Homepage [in English](http://iitp.ru/en/users/46.htm), [in Russian](http://iitp.ru/ru/users/46.htm)
-- Full texts of articles: [Yandex Disk](https://disk.yandex.ru/d/Cz6NZpU6hSMPfg)
+- Full texts of articles: [Google Drive](https://drive.google.com/drive/folders/0Bxw63g5l4P7peE1NcFZVNnp6RW8?resourcekey=0-_0LBguQxlhFqgsWzuz93Mg&usp=sharing)
 - [ArXiv](https://arxiv.org/a/kozyakin_v_1)
 - [eLIBRARY.RU](https://elibrary.ru/author_items.asp?spin=6507-5516)
 - [Google Scholar](https://scholar.google.com/citations?user=QuhA8hoAAAAJ)
