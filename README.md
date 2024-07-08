@@ -54,6 +54,16 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 ---
 
+### Spectrum maximizing products
+
+*Здесь собраны некоторые скрипты на языках Wolfram Mathematica, MATLAB и Python, предназначенные для построения примеров матричных множеств {A,B}, для которых матричные произведения BAA и BBA максимизируют спектр.*
+
+*Here are collected some scripts in Wolfram Mathematica, MATLAB, and Python designed to construct examples of matrix sets {A,B} for which the BAA and BBA are spectrum maximizing products.* 
+
+- Страница проекта (link to working files): [spectrum_maximizing_products](https://github.com/kozyakin/spectrum_maximizing_products)
+
+---
+
 ### BibTeX to AMSBIB
 
 *При подготовке рукописей для публикации в подавляющем числе (более 150-и) российских журналов математической направленности портал [Math-Net.Ru](https://www.mathnet.ru/) рекомендует оформлять библиографию в стиле [AMSBIB](https://www.mathnet.ru/poffice/amsbibpackage.phtml?wshow=amsbibpackage&option_lang=rus). Чтобы упростить и унифицировать процесс преобразования библиографии из формата BibTeX в формат AMSBIB, здесь представлены стилевые файлы `amsbib.bst` и `amsbibs.bst`, осуществляющие такое преобразование автоматически.*
