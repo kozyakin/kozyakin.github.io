@@ -5,6 +5,7 @@
   <meta charset='utf-8'>
   <meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator'>
   <meta content='width=device-width,initial-scale=1' name='viewport'>
+  <link href='latex2html_via_tex4ht.css' rel='stylesheet' type='text/css'>
   <style type='text/css'>
 
   <!--   
@@ -45,6 +46,7 @@
   .subsectionHead, .likesubsectionHead { font-size: 1.3195em; }  
   .subsubsectionHead, .likesubsubsectionHead { font-size: 1.1487em; }  
   @media (prefers-color-scheme: dark) { img[src^="latex2html_via_tex4ht"]{filter: invert(1); } }  
+  body { background-color: Canvas; color: CanvasText; color-scheme: light dark; }  
   li p.indent { text-indent: 0em }  
   li p:first-child{ margin-top:0em; }  
   li p:last-child, li div:last-child { margin-bottom:0.5em; }  
@@ -185,9 +187,6 @@
   window.MathJax = { tex: { tags: "ams", }, }; 
   </script>
   <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>
-  <script>
-  window.MathJax = { tex: { tags: "ams", processEscapes: true, processEnvironments: true, packages: ['base', 'color', 'ams', 'boldsymbol', 'newcommand', 'verb'] }, loader: { load: ['[tex]/color', '[tex]/ams', '[tex]/boldsymbol', '[tex]/newcommand', '[tex]/verb'] } }; 
-  </script>
 </head>
 <body>
   <div class='maketitle'>
@@ -196,7 +195,7 @@
       <span class='cmr-12'>Victor Kozyakin</span>
     </div><br>
     <div class='date'>
-      <span class='cmr-12'>February 16, 2024</span>
+      <span class='cmr-12'>August 7, 2024</span>
     </div>
   </div>
   <h3 class='sectionHead' id='call-command'><span class='titlemark'>1</span> <a id='x1-10001'></a>Call Command</h3><!-- l. 23 -->
@@ -229,33 +228,17 @@ make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 \Css{p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-bottom:0em;
     background:\#F0F0F0; color:\#000000;}}
 
-\Configure{@HEAD}{\HCode{
-&lt;script&gt;
-window.MathJax = {
-  tex: {
-    tags: "ams",
-    processEscapes: true,
-    processEnvironments: true,
-    packages: [’base’, ’color’, ’ams’, ’boldsymbol’, ’newcommand’, ’verb’]
-  },
-  loader: {
-    load: [’[tex]/color’, ’[tex]/ams’, ’[tex]/boldsymbol’, ’[tex]/newcommand’, ’[tex]/verb’]
-  }
-};
-&lt;/script&gt;\Hnewline
-}}
-
 \def\eqref#1{$\mathrm{(\ref{#1})}$}
 
 \begin{document}
 
 \EndPreamble
-</pre><!-- l. 84 -->
-  <p class='nopar'></p><!-- l. 86 -->
+</pre><!-- l. 68 -->
+  <p class='nopar'></p><!-- l. 70 -->
   <p class='noindent'></p>
-  <h3 class='sectionHead' id='how-to-reference-equations-in-texhtmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 87 -->
-  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='cmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 92 -->
-  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='cmbx-10'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='cmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 100 -->
+  <h3 class='sectionHead' id='how-to-reference-equations-in-texhtmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 71 -->
+  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='cmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 76 -->
+  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='cmbx-10'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='cmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 84 -->
   <p class='indent'>So, for the LaTeX code below</p>
   <pre class='verbatim' id='verbatim-5'>
 \begin{equation}
@@ -274,35 +257,35 @@ a&amp;=1\label{A}\\
 b&amp;=0\label{B}
 \end{align}
 Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{A}$-\eqref{B}.
-</pre><!-- l. 119 -->
-  <p class='nopar'>we obtain the following output:</p><!-- l. 124 -->
-  <p class='indent'>\begin {equation} \boldsymbol {f}(x)=1\label {eq} \end {equation}<a id='x1-2001r1'></a></p><!-- l. 128 -->
-  <p class='indent'>\[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]</p><!-- l. 130 -->
-  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: \(\mathrm {(\ref {E:mycond})}\)</p><!-- l. 136 -->
-  <p class='indent'>\begin {align} a & =1\label {A} \\ b & =0\label {B} \end {align}</p><!-- l. 137 -->
-  <p class='indent'>Example of references: we have equation \(\mathrm {(\ref {eq})}\) from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or \(\ref {A}\)-\(\mathrm {(\ref {B})}\).</p><!-- l. 140 -->
+</pre><!-- l. 103 -->
+  <p class='nopar'>we obtain the following output:</p><!-- l. 108 -->
+  <p class='indent'>\begin{equation} \boldsymbol {f}(x)=1\label {eq} \end{equation}<a id='x1-2001r1'></a></p><!-- l. 112 -->
+  <p class='indent'>\[ 1\neq1. \tag{OneIsNotOne Condition}\label{E:mycond} \]</p><!-- l. 114 -->
+  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: \(\mathrm{(\ref{E:mycond})}\)</p><!-- l. 120 -->
+  <p class='indent'>\begin{align} a & =1\label {A} \\ b & =0\label {B} \end{align}</p><!-- l. 121 -->
+  <p class='indent'>Example of references: we have equation \(\mathrm{(\ref{eq})}\) from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or \(\ref{A}\)-\(\mathrm{(\ref{B})}\).</p><!-- l. 124 -->
   <p class='noindent'></p>
-  <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3><!-- l. 141 -->
+  <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3><!-- l. 125 -->
   <p class='noindent'>Tex4th supports TikZ, however, for correct displaying text and math symbols in TikZ picture, it is needed to put in the preamble of tex ﬁle the following lines, before TikZ package loading:</p>
   <pre class='verbatim' id='verbatim-6'>
 \ifdefined\HCode
    \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
 \fi
-</pre><!-- l. 148 -->
-  <p class='nopar'></p><!-- l. 150 -->
+</pre><!-- l. 132 -->
+  <p class='nopar'></p><!-- l. 134 -->
   <p class='indent'>Below is an example of using TikZ.</p>
-  <figure class='figure' id='-example-of-stanford'>
-    <a id='x1-30011'></a> <!-- l. 155 -->
+  <figure class='figure' id='x1-30011'>
+    <span id='example-of-stanford'></span> <!-- l. 139 -->
     <p class='noindent'><img alt='˜ ˜ HHSSxy1−1−1111SS ' src='latex2html_via_tex4ht0x.svg'></p>
     <figcaption class='caption'>
       <span class='id'>Figure&nbsp;1:</span> <span class='content'>Example of Stanford</span>
     </figcaption><!-- tex4ht:label?: x1-30011  -->
-  </figure><!-- l. 212 -->
-  <p class='indent'>Citation example:&nbsp;<span class='cite'>[<a href='#XNDKKP:DSS96'>1</a>]</span>.</p>
+  </figure><!-- l. 196 -->
+  <p class='indent'>Citation example:&nbsp;<span class='cite'>[<a href='#XNDKKP_DSS96'>1</a>]</span>.</p>
   <h3 class='likesectionHead' id='references'><a id='x1-4000'></a>References</h3><!-- l. 18 -->
   <p class='noindent'></p>
   <div class='thebibliography'>
-    <p class='bibitem'><span class='biblabel'>[1]<span class='bibsp'>&nbsp;&nbsp;&nbsp;</span></span><a id='XNDKKP:DSS96'></a>Al-Nayef&nbsp;A., Diamond&nbsp;P., Kloeden&nbsp;P. et&nbsp;al. Bi-shadowing and delay equations&nbsp;// Dynam. Stability Systems. 1996. Vol.&nbsp;11, no.&nbsp;2. P.&nbsp;121–134.</p>
+    <p class='bibitem'><span class='biblabel'>[1]<span class='bibsp'>&nbsp;&nbsp;&nbsp;</span></span><a id='XNDKKP_DSS96'></a>Al-Nayef&nbsp;A., Diamond&nbsp;P., Kloeden&nbsp;P. et&nbsp;al. Bi-shadowing and delay equations&nbsp;// Dynam. Stability Systems. 1996. Vol.&nbsp;11, no.&nbsp;2. P.&nbsp;121–134.</p>
   </div>
 </body>
 </html>
