@@ -91,7 +91,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 *Working materials on the theory of rotation of vector fields (degree of mapping) as part of the course for students of the Interfaculty Chair of information transmission problems and data analysis of the Moscow Institute of Physics and Technology at the Institute for Information Transmission Problems of the Russian Academy of Sciences (**in Russian!**)*
 
-- Страница проекта (link to working files): [for_mipt_students](redir_to_mipt_page.html )
+- Страница проекта (link to working files): [for_mipt_students](https://kozyakin.github.io/for_mipt_students/)
 
 ---
 
