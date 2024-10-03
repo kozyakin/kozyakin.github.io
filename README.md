@@ -6,7 +6,7 @@
 
 I am Victor Kozyakin, Principal researcher at the Institute of Information Transmission Problems, Russian Academy of Science.
 
-More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
+More details see at my [Home Page](https://sites.google.com/view/kozyakin/en)
 
 ---
 
@@ -97,7 +97,7 @@ More details see at my [Homepage](http://iitp.ru/en/users/46.htm)
 
 ## My links
 
-- Homepage [in English](http://iitp.ru/en/users/46.htm), [in Russian](http://iitp.ru/ru/users/46.htm)
+- Home Page [in English](https://sites.google.com/view/kozyakin/en), [in Russian](https://sites.google.com/view/kozyakin/ru)
 - Full texts of articles: [Google Drive](https://drive.google.com/drive/folders/0Bxw63g5l4P7pM3JSU0RQTjlGSjQ?resourcekey=0-h4Sb2EpehJVqlHZ_oRIz-A)
 - [ArXiv](https://arxiv.org/a/kozyakin_v_1)
 - [eLIBRARY.RU](https://elibrary.ru/author_items.asp?spin=6507-5516)
