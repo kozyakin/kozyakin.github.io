@@ -4,7 +4,7 @@
 
 ## About me
 
-I am Victor Kozyakin, Principal researcher at the Institute of Information Transmission Problems, Russian Academy of Science.
+I am Victor Kozyakin, Principal researcher at the Higher School of Modern Mathematics, Moscow Institute of Physics and Technology.
 
 More details see at my [Home Page](https://sites.google.com/view/kozyakin/en)
 
