@@ -4,7 +4,7 @@
 
 ## About me
 
-I am Victor Kozyakin, Principal researcher at the Higher School of Modern Mathematics, Moscow Institute of Physics and Technology.
+I am Victor Kozyakin, researcher at the Higher School of Modern Mathematics, Moscow Institute of Physics and Technology.
 
 More details see at my [Home Page](https://sites.google.com/view/kozyakin/en)
 
