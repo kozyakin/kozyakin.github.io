@@ -4,7 +4,8 @@
   <div class="wrapper">
     <center style="font-size:80%">
       <p>{%- include social.html -%}</p>
-      <p>{{- site.data.translations['copyright'][page.lang] | escape -}}</p>
+      <p>{{- site.data.translations['copyright'][page.lang] | escape -}}<br>
+      Page last modified {{ page.last_modified_at | date: '%B %d, %Y %H:%M' }}</p>
     </center>
   </div>
 
