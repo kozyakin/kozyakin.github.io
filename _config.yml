@@ -1,3 +1,69 @@
-remote_theme: pages-themes/midnight@v0.2.0
+# Site settings
+title: Victor Kozyakin
+description: Website of Victor Kozyakin on GitHub Pages
+lang: en
+languages: ["en", "ru"]
+email: koziakin.vs@mipt.ru
+author: Victor Kozyakin
+show_downloads: false # "true" or "false" to indicate whether to provide a download URL
+show_excerpts: false # set to true to show excerpts on homepage and other pages
+
+# generate social links in footer (only available in some themes, e.g. minima)
+#twitter_username: a-twitter-username
+github_username:  kozyakin
+
+# Minima specific settings, which are only available from Minima 3.0 onward.
+theme: minima
+minima:
+  # Minima skin selection.
+  # Available skins are:
+  # classic            Default, light color scheme.
+  # dark               Dark variant of the classic skin.
+  # auto               Adaptive skin based on the default classic and dark skins.
+  # solarized-light    Light variant of solarized color scheme.
+  # solarized-dark     Dark variant of solarized color scheme.
+  # solarized          Adaptive skin for solarized color scheme skins.
+  skin: classic
+
+# Permalink structure
+permalink: :path
+
+#plugins
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jemoji
+  - jekyll-last-modified-at
+  - jekyll-redirect-from
+
+# Optional. The default date format, used if none is specified in the tag.
+last-modified-at:
+    date-format: '%B %d, %Y %H:%M'
+    
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: base
+#  - scope:
+#      type: posts
+#    values:
+#      layout: post
+  - scope:
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: "*/index.md"
+      type: pages
+    values:
+      layout: home
+  - scope:
+      path: en
+    values:
+      lang: en
+  - scope:
+      path: ru
+    values:
+      lang: ru
+
+# Exclude these files from your production_site
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
