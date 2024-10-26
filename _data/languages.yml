@@ -1,0 +1,8 @@
+en:
+  label: English
+  icon: 🇺🇸
+  alias: us
+ru:
+  label: Russian
+  icon: 🇷🇺
+  alias: ru
