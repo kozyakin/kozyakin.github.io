@@ -1,99 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>http://localhost:4000/en/about</loc>
-<lastmod>2024-10-23T16:58:49+03:00</lastmod>
+  <loc>https://kozyakin.github.io/</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>http://localhost:4000/ru/about</loc>
-<lastmod>2024-10-23T16:59:06+03:00</lastmod>
+  <loc>https://kozyakin.github.io/jsrbib/JSRbib.html</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/en/</loc>
-<lastmod>2024-10-19T12:29:24+03:00</lastmod>
+  <loc>https://kozyakin.github.io/jsrbib/JSRbib.pdf</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/ru/</loc>
-<lastmod>2024-10-19T12:31:34+03:00</lastmod>
+  <loc>https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.html</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
-<lastmod>2024-10-19T12:26:06+03:00</lastmod>
+  <loc>https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.pdf</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/en/interests</loc>
-<lastmod>2024-10-24T12:36:24+03:00</lastmod>
+  <loc>https://kozyakin.github.io/bibtex_to_amsbib/example.pdf</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/ru/interests</loc>
-<lastmod>2024-10-24T12:47:53+03:00</lastmod>
+  <loc>https://kozyakin.github.io/bibtex_to_amsbib/example_en.pdf</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/en/nauxiliaries</loc>
-<lastmod>2024-10-25T09:49:02+03:00</lastmod>
+  <loc>https://kozyakin.github.io/for_mipt_students/index.html</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/ru/nauxiliaries</loc>
-<lastmod>2024-10-25T10:02:22+03:00</lastmod>
+  <loc>https://kozyakin.github.io/for_mipt_students/program.html</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>http://localhost:4000/en/publications</loc>
-<lastmod>2024-10-25T16:33:45+03:00</lastmod>
+  <loc>https://kozyakin.github.io/for_mipt_students/auxdata.html</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>http://localhost:4000/ru/publications</loc>
-<lastmod>2024-10-25T16:27:33+03:00</lastmod>
+  <loc>https://kozyakin.github.io/for_mipt_students/exam.html</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>http://localhost:4000/ru/xmemoria</loc>
-<lastmod>2024-10-25T09:52:29+03:00</lastmod>
+  <loc>https://kozyakin.github.io/for_mipt_students/assets/files/vector_fields.pdf</loc>
+  <lastmod>2024-10-12T06:56:27+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
-<url>
-<loc>http://localhost:4000/bibtex_to_amsbib/example.pdf</loc>
-<lastmod>2024-05-17T12:31:52+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/bibtex_to_amsbib/example_en.pdf</loc>
-<lastmod>2024-05-17T12:31:52+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/for_mipt_students/assets/files/vector_fields.pdf</loc>
-<lastmod>2024-05-17T12:31:52+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/for_mipt_students/auxdata.html</loc>
-<lastmod>2024-10-12T09:54:30+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/for_mipt_students/exam.html</loc>
-<lastmod>2024-05-17T12:31:52+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/for_mipt_students/</loc>
-<lastmod>2024-05-17T12:31:52+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/for_mipt_students/program.html</loc>
-<lastmod>2024-10-12T12:37:52+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/google3e18e9f24ed164e0.html</loc>
-<lastmod>2024-05-17T12:31:52+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/jsrbib/JSRbib.html</loc>
-<lastmod>2024-10-11T09:39:24+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/jsrbib/JSRbib.pdf</loc>
-<lastmod>2024-10-11T09:43:07+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/latex2html/latex2html_via_tex4ht.html</loc>
-<lastmod>2024-08-07T03:26:40+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/latex2html/latex2html_via_tex4ht.pdf</loc>
-<lastmod>2024-08-07T03:25:55+03:00</lastmod>
-</url>
+
+
 </urlset>
