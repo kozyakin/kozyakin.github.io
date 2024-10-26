@@ -1,4 +1,4 @@
-# Welcome to Victor Kozyakin GitHub Pages
+# Welcome to Victor Kozyakin GitHub Page
 
 ---
 
