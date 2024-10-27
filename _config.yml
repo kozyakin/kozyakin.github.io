@@ -31,13 +31,8 @@ permalink: :path
 #plugins
 plugins:
   - jemoji
-  - jekyll-last-modified-at
   - jekyll-redirect-from
 
-# Optional. The default date format, used if none is specified in the tag.
-last-modified-at:
-    date-format: '%B %d, %Y %H:%M'
-    
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
