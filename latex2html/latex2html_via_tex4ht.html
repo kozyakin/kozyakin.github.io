@@ -106,7 +106,6 @@
   .hline hr, .cline hr{border:none;border-top:1px solid black;}  
   .hline {border-top: 1px solid black;}  
   .hline + .vspace:last-child{display:none;}  
-  .hline:first-child{border-bottom:1px solid black;border-top:none;}  
   .tabbing-right {text-align:right;}  
   div.float, div.figure {margin-left: auto; margin-right: auto;}  
   div.float img {text-align:center;}  
@@ -173,10 +172,10 @@
   table.gather {width:100%;}  
   div.gather-star {text-align:center;}  
   .rotatebox{display: inline-block;}  
-  body { margin:5% 5%; max-width:72em; font-size:large; padding:0 40px;}  
+  body {margin:5% 5%; max-width:72em; font-size:large; padding:0 40px;}  
   p.indent {text-indent:1.5em;}  
   .columns-3 p.indent {text-indent:0em;}  
-  p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-bottom:0em; background:#F0F0F0; color:#000000;}  
+  p.bibitem-p {text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-bottom:0em; background:#F0F0F0; color:#000000;}  
   /* end css.sty */  
 
 
@@ -195,7 +194,7 @@
       <span class='cmr-12'>Victor Kozyakin</span>
     </div><br>
     <div class='date'>
-      <span class='cmr-12'>August 7, 2024</span>
+      <span class='cmr-12'>October 30, 2024</span>
     </div>
   </div>
   <h3 class='sectionHead' id='call-command'><span class='titlemark'>1</span> <a id='x1-10001'></a>Call Command</h3><!-- l. 23 -->
@@ -260,10 +259,10 @@ Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{
 </pre><!-- l. 103 -->
   <p class='nopar'>we obtain the following output:</p><!-- l. 108 -->
   <p class='indent'>\begin{equation} \boldsymbol {f}(x)=1\label {eq} \end{equation}<a id='x1-2001r1'></a></p><!-- l. 112 -->
-  <p class='indent'>\[ 1\neq1. \tag{OneIsNotOne Condition}\label{E:mycond} \]</p><!-- l. 114 -->
-  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: \(\mathrm{(\ref{E:mycond})}\)</p><!-- l. 120 -->
+  <p class='indent'>\[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]</p><!-- l. 114 -->
+  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: \(\mathrm {(\ref {E:mycond})}\)</p><!-- l. 120 -->
   <p class='indent'>\begin{align} a & =1\label {A} \\ b & =0\label {B} \end{align}</p><!-- l. 121 -->
-  <p class='indent'>Example of references: we have equation \(\mathrm{(\ref{eq})}\) from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or \(\ref{A}\)-\(\mathrm{(\ref{B})}\).</p><!-- l. 124 -->
+  <p class='indent'>Example of references: we have equation \(\mathrm {(\ref {eq})}\) from Sec. <a href='#call-command'>1</a>. Or \(\ref {A}\)-\(\mathrm {(\ref {B})}\).</p><!-- l. 124 -->
   <p class='noindent'></p>
   <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3><!-- l. 125 -->
   <p class='noindent'>Tex4th supports TikZ, however, for correct displaying text and math symbols in TikZ picture, it is needed to put in the preamble of tex ﬁle the following lines, before TikZ package loading:</p>
