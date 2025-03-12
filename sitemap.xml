@@ -87,6 +87,30 @@
   <loc>https://kozyakin.github.io/assets/cvkoz-ru.pdf</loc>
   <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://kozyakin.github.io/for_mipt_students/</loc>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/for_mipt_students/index.html</loc>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/for_mipt_students/program.html</loc>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/for_mipt_students/auxdata.html</loc>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/for_mipt_students/exam.html</loc>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/for_mipt_students/assets/files/vector_fields.pdf</loc>
+  <priority>0.33</priority>
+</url>
 
 
 </urlset>
