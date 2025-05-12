@@ -11,23 +11,18 @@ ref: publications
   .larm-1000{font-size:83%}
   .latt-1200{font-family:monospace,monospace}
   .lati-1200{font-style:italic}
-  p.noindent{text-indent:0}
-  p{margin-top:0;margin-bottom:0}
-  p.noindent+p.noindent{margin-top:1em}
-  a{overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;hyphens:auto}
-  center{margin-top:1em;margin-bottom:1em}
-  h1,h2,h3,h4,h5{line-height:1.2}
-  @media print{
-  body{max-width:none}
-  }
-  .likesectionHead{font-size:1.5157em}
-  .subsectionHead{font-size:1.3195em}
-  body{background-color:Canvas;color:CanvasText;color-scheme:light dark;margin:5%;max-width:72em;font-size:large;padding:0 40px}
-  div.center,div.center div.center{text-align:center;margin-left:1em;margin-right:1em}
-  div.center div{text-align:left}
-  p.bibitem{text-indent:-2em;margin-left:2em;margin-top:.6em;margin-bottom:.6em}
-  p.bibitem-p{text-indent:0;text-indent:1.5em;margin-left:2em;margin-top:0;margin-bottom:0;background:#f0f0f0;color:#000}
-  .subsectionToc{margin-left:1em}
+
+  /* start css.sty */  
+  .labx-1200{font-weight: bold;}  
+  .latt-1200{font-family: monospace,monospace;}  
+  .lati-1200{font-style: italic;}  
+  p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+  .sectionHead, .likesectionHead { font-size: 1.5157em; }  
+  p.noindent { text-indent: 0em }  
+  td p.noindent { text-indent: 0em; margin-top:0em; }  
+  p.noindent + p.noindent{margin-top:1em;}  
+  /* end css.sty */  
+
   -->
   </style>
   <meta content='publications_en_github.tex' name='src'>
@@ -37,7 +32,7 @@ ref: publications
   <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>
 </head>
 <body>
-  <div class='center'>
+  <div style="text-align: center;">
     <!-- l. 85 -->
     <p class='noindent'></p><!-- l. 85 -->
     <p class='noindent'><span class='labx-1728'>List of publications</span><br>
