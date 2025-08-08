@@ -12,6 +12,7 @@
   .ecrm-0900{font-size:90%}
   .ecbx-1000{font-weight:700}
   p.noindent,p.nopar{text-indent:0}
+  p.indent{text-indent:1.5em}
   p{margin-top:0;margin-bottom:0}
   p.noindent+p.noindent{margin-top:1em}
   a{overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;hyphens:auto}
@@ -38,7 +39,7 @@
   div.caption{text-indent:-2em;margin-left:3em;margin-right:1em;text-align:center;margin-top:.5rem}
   div.caption span.id{font-weight:700;white-space:nowrap}
   p.bibitem{text-indent:-2em;margin-left:2em;margin-top:.6em;margin-bottom:.6em}
-  p.bibitem-p{text-indent:0}
+  p.bibitem-p{text-indent:0;margin-left:2em;margin-top:.6em;margin-bottom:.6em}
   div.maketitle,h2.titleHead{text-align:center}
   div.maketitle{margin-bottom:2em}
   div.author,div.date{text-align:center}
@@ -47,9 +48,11 @@
   figcaption.caption{text-indent:-2em;margin-left:3em;margin-right:1em;text-align:center}
   figcaption.caption span.id{font-weight:700;white-space:nowrap}
   img+figcaption,p+figcaption{margin-top:1em}
-  p.indent{text-indent:1.5em}
+  .thebibliography dl{display:grid;grid-auto-columns:min-content 1fr;grid-auto-flow:column;grid-auto-columns:1ex 1fr}
+  .thebibliography dt{grid-column:1;margin-bottom:.5em}
+  .thebibliography p.indent{text-indent:1.5em;background:#f0f0f0;color:#000}
+  .thebibliography dd{margin-top:0;margin-bottom:1em}
   .columns-3 p.indent{text-indent:0}
-  p.bibitem-p{text-indent:1.5em;margin-left:2em;margin-top:0;margin-bottom:0;background:#f0f0f0;color:#000}
   -->
   </style>
   <meta content='latex2html_via_tex4ht.tex' name='src'>
@@ -65,7 +68,7 @@
       <span class='ecrm-1200'>Victor Kozyakin</span>
     </div><br>
     <div class='date'>
-      <span class='ecrm-1200'>June 8, 2025</span>
+      <span class='ecrm-1200'>August 8, 2025</span>
     </div>
   </div>
   <h3 class='sectionHead' id='call-command'><span class='titlemark'>1</span> <a id='x1-10001'></a>Call Command</h3><!-- l. 24 -->
@@ -149,8 +152,13 @@ Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{
   <p class='indent'>Citation example:&nbsp;<span class='cite'>[<a href='#XNDKKP_DSS96'>1</a>]</span>.</p>
   <h3 class='likesectionHead' id='references'><a id='x1-4000'></a>References</h3><!-- l. 18 -->
   <p class='noindent'></p>
-  <div class='thebibliography'>
-    <p class='bibitem'><span class='biblabel'>[1]<span class='bibsp'>&nbsp;&nbsp;&nbsp;</span></span><a id='XNDKKP_DSS96'></a>Al-Nayef&nbsp;A., Diamond&nbsp;P., Kloeden&nbsp;P. et&nbsp;al. Bi-shadowing and delay equations&nbsp;// Dynam. Stability Systems. 1996. Vol.&nbsp;11, no.&nbsp;2. P.&nbsp;121–134.</p>
-  </div>
+  <section class='thebibliography' role='doc-bibliography'>
+    <dl>
+      <dt>[1]</dt>
+      <dd>
+        <a id='XNDKKP_DSS96'></a>Al-Nayef&nbsp;A., Diamond&nbsp;P., Kloeden&nbsp;P. et&nbsp;al. Bi-shadowing and delay equations&nbsp;// Dynam. Stability Systems. 1996. Vol.&nbsp;11, no.&nbsp;2. P.&nbsp;121–134.
+      </dd>
+    </dl>
+  </section>
 </body>
 </html>
