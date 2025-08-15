@@ -18,6 +18,15 @@
   a{overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;hyphens:auto}
   a img{border-top:0;border-left:0;border-right:0}
   img.math{vertical-align:middle}
+  h1,h2,h3,h4,h5{line-height:1.2}
+  @media print{
+  body{max-width:none}
+  }
+  .likesectionHead,.sectionHead{font-size:1.5157em}
+  @media (prefers-color-scheme:dark){
+  img[src^=latex2html_via_tex4ht]{filter:invert(1)}
+  }
+  body{background-color:Canvas;color:CanvasText;color-scheme:light dark;margin:5%;max-width:72em;font-size:large;padding:0 40px}
   li p.indent{text-indent:0}
   li p:first-child{margin-top:0;margin-bottom:0}
   li div:last-child,li p:last-child,li p~ul:last-child{margin-bottom:.5em}
@@ -29,8 +38,6 @@
   div.figure img{text-align:center}
   div.caption{text-indent:-2em;margin-left:3em;margin-right:1em;text-align:center;margin-top:.5rem}
   div.caption span.id{font-weight:700;white-space:nowrap}
-  p.bibitem{text-indent:-2em;margin-left:2em;margin-top:.6em;margin-bottom:.6em}
-  p.bibitem-p{text-indent:0;margin-left:2em;margin-top:.6em;margin-bottom:.6em}
   div.maketitle,h2.titleHead{text-align:center}
   div.maketitle{margin-bottom:2em}
   div.author,div.date{text-align:center}
@@ -41,9 +48,9 @@
   img+figcaption,p+figcaption{margin-top:1em}
   .thebibliography dl{display:grid;grid-auto-columns:min-content 1fr;grid-auto-flow:column;grid-auto-columns:1ex 1fr}
   .thebibliography dt{grid-column:1;margin-bottom:.5em}
-  body{margin:5%;max-width:72em;font-size:large;padding:0 40px}
-  .thebibliography p.indent{text-indent:1.5em;background:#f0f0f0;color:#000}
+  .thebibliography p.indent{margin-top:1ex;margin-bottom:-1ex;text-indent:1.5em;font-size:smaller}
   .thebibliography dd{margin-top:0;margin-bottom:1em}
+  .thebibliography p.noindent{margin-top:-2ex}
   .columns-3 p.indent{text-indent:0}
   -->
   </style>
@@ -84,25 +91,31 @@ make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 </pre><!-- l. 49 -->
   <p class='nopar'>where the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span> is as follows</p>
   <pre class='verbatim' id='verbatim-4'>
-\Preamble{xhtml,html5,0,mathjax,p-indent,charset=utf-8,css-in,fn-in}
+\Preamble{xhtml,0,mathjax,p-indent,fn-in}
+
+\Configure{MathjaxBlock}{\ifvmode\IgnorePar\fi\HCode{&lt;span class="mathjax-block"&gt;}}{\HCode{&lt;/span&gt;}}
+\Configure{MathjaxEnv}{\ifvmode\IgnorePar\fi\HCode{&lt;span class="mathjax-env"&gt;}}{\HCode{&lt;/span&gt;}}
+
 \textwidth=2160pt
 
-\Css{body { margin:5\% 5\%; max-width:72em; font-size:large; padding:0 40px;}}
-\Css{p.indent {text-indent:1.5em;}}
-\Css{.columns-3 p.indent {text-indent:0em;}}
-\Css{p.bibitem-p { text-indent: 1.5em; margin-left: 2em; margin-top:0em; margin-bottom:0em;
-    background:\#F0F0F0; color:\#000000;}}
+\Css{body {margin:5\%; max-width:72em; font-size:large; padding:0 40px;}}
+\Css{.thebibliography p.indent {margin-top:1ex; margin-bottom:-1ex; text-indent:1.5em;
+    font-size:smaller}}
+\Css{.thebibliography dd {margin-top:0; margin-bottom:1em;}}
+\Css{.thebibliography dl{grid-auto-columns:1ex 1fr}}
+\Css{.thebibliography p.noindent{margin-top:-2ex}}
+\Css{.columns-3 p.indent {text-indent:0}}
 
 \def\eqref#1{$\mathrm{(\ref{#1})}$}
 
 \begin{document}
 
 \EndPreamble
-</pre><!-- l. 69 -->
+</pre><!-- l. 75 -->
   <p class='nopar'></p>
-  <h3 class='sectionHead' id='how-to-reference-equations-in-texhtmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 72 -->
-  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='ecbx-1000'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 77 -->
-  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='ecbx-1000'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='ecbx-1000'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 85 -->
+  <h3 class='sectionHead' id='how-to-reference-equations-in-texhtmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 78 -->
+  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='ecbx-1000'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 86 -->
+  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='ecbx-1000'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='ecbx-1000'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 99 -->
   <p class='indent'>So, for the LaTeX code below</p>
   <pre class='verbatim' id='verbatim-5'>
 \begin{equation}
@@ -121,26 +134,26 @@ a&amp;=1\label{A}\\
 b&amp;=0\label{B}
 \end{align}
 Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{A}$-\eqref{B}.
-</pre><!-- l. 104 -->
-  <p class='nopar'>we obtain the following output: <span class='mathjax-env'>\begin{equation} \boldsymbol {f}(x)=1\label {eq} \end{equation}</span><a id='x1-2001r1'></a> <span class='mathjax-block'>\[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]</span></p><!-- l. 115 -->
-  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: <span class='mathjax-inline'>\(\mathrm {(\ref {E:mycond})}\)</span> <span class='mathjax-env'>\begin{align} a & =1\label {A} \\ b & =0\label {B} \end{align}</span><a id='x1-2002r2'></a></p><!-- l. 122 -->
+</pre><!-- l. 118 -->
+  <p class='nopar'>we obtain the following output: <span class='mathjax-env'>\begin{equation} \boldsymbol {f}(x)=1\label {eq} \end{equation}</span><a id='x1-2001r1'></a> <span class='mathjax-block'>\[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]</span></p><!-- l. 129 -->
+  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: <span class='mathjax-inline'>\(\mathrm {(\ref {E:mycond})}\)</span> <span class='mathjax-env'>\begin{align} a & =1\label {A} \\ b & =0\label {B} \end{align}</span><a id='x1-2002r2'></a></p><!-- l. 137 -->
   <p class='indent'>Example of references: we have equation <span class='mathjax-inline'>\(\mathrm {(\ref {eq})}\)</span> from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or <span class='mathjax-inline'>\(\ref {A}\)</span>-<span class='mathjax-inline'>\(\mathrm {(\ref {B})}\)</span>.</p>
-  <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3><!-- l. 126 -->
+  <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3><!-- l. 142 -->
   <p class='noindent'>Tex4th supports TikZ, however, for correct displaying text and math symbols in TikZ picture, it is needed to put in the preamble of tex ﬁle the following lines, before TikZ package loading:</p>
   <pre class='verbatim' id='verbatim-6'>
 \ifdefined\HCode%
    \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}%
 \fi%
-</pre><!-- l. 133 -->
-  <p class='nopar'></p><!-- l. 135 -->
+</pre><!-- l. 150 -->
+  <p class='nopar'></p><!-- l. 152 -->
   <p class='indent'>Below is an example of using TikZ.</p>
   <figure class='figure' id='x1-30011'>
-    <span id='example-of-stanford'></span> <!-- l. 140 -->
+    <span id='example-of-stanford'></span> <!-- l. 157 -->
     <p class='noindent'><img alt='[Picture]' src='latex2html_via_tex4ht0x.svg'></p>
     <figcaption class='caption'>
       <span class='id'>Figure&nbsp;1:</span> <span class='content'>Example of Stanford</span>
     </figcaption><!-- tex4ht:label?: x1-30011  -->
-  </figure><!-- l. 197 -->
+  </figure><!-- l. 223 -->
   <p class='indent'>Citation example:&nbsp;<span class='cite'>[<a href='#XNDKKP_DSS96'>1</a>]</span>.</p>
   <h3 class='likesectionHead' id='references'><a id='x1-4000'></a>References</h3><!-- l. 18 -->
   <p class='noindent'></p>
