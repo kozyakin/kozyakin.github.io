@@ -183,14 +183,30 @@ pre {
   }
 }
 
-.highlight {
-  border-radius: 3px;
-  background: $code-background-color;
+div.highlight, figure.highlight {
   @extend %vertical-rhythm;
-
-  .highlighter-rouge & {
-    background: $code-background-color;
+  border: 1px solid $border-color-01;
+  border-radius: 3px;
+  pre { margin: 0 }
+  table, tbody, th, tr, td {
+    margin: 0;
+    padding: 0;
+    border: 0
   }
+  .lineno, .gl { text-align: right }
+}
+
+figure.highlight {
+  table { margin: -8px -12px -14px }
+  td.gutter { border-right: 1px solid $border-color-01 }
+  td.code { width: 100% }
+}
+
+code.highlighter-rouge {
+  padding: 1px 5px;
+  font-size: 14px;
+  border: 1px solid $border-color-01;
+  border-radius: 3px;
 }
 
 
