@@ -103,7 +103,8 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  color: $heading-color;
+  font-weight: 500;
 }
 
 
@@ -121,7 +122,8 @@ a {
 
   &:hover {
     color: $link-hover-color;
-    text-decoration: underline;
+    text-decoration: underline $brand-color;
+    text-underline-offset: 3px;
   }
 
   .social-media-list &:hover {
@@ -141,7 +143,7 @@ blockquote {
   color: $brand-color;
   border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit * .5;
-  @include relative-font-size(1.125);
+  @include relative-font-size(1.05);
   font-style: italic;
 
   > :last-child {
