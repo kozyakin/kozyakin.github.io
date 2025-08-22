@@ -3,7 +3,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link id="main-stylesheet" rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {%- feed_meta -%}
   {% if page.custom_css %}
     {% for stylesheet in page.custom_css %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
@@ -25,6 +26,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@v0.108.0/examples/js/controls/OrbitControls.js"></script>
   {% endif %}
+
+  {%- include custom-head.html -%}
 
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
