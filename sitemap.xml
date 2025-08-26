@@ -9,106 +9,132 @@
 
 <url>
   <loc>https://kozyakin.github.io/</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/en/</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/en/about</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/en/interests</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/en/nauxiliaries</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/en/publications</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/ru/</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/assets/cvkoz-en.pdf</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kozyakin.github.io/ru/interests</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kozyakin.github.io/jsrbib/JSRbib.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kozyakin.github.io/jsrbib/JSRbib.pdf</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.pdf</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kozyakin.github.io/assets/example.pdf</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kozyakin.github.io/assets/example_en.pdf</loc>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://kozyakin.github.io/ru/about</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/ru/interests</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/ru/nauxiliaries</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/jsrbib/JSRbib.html</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/jsrbib/JSRbib.pdf</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.html</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/latex2html/latex2html_via_tex4ht.pdf</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/assets/example.pdf</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kozyakin.github.io/assets/example_en.pdf</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/ru/publications</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/ru/xmemoria</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/assets/cvkoz-ru.pdf</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/for_mipt_students/</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/for_mipt_students/index.html</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/for_mipt_students/program.html</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/for_mipt_students/auxdata.html</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/for_mipt_students/exam.html</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://kozyakin.github.io/for_mipt_students/assets/files/vector_fields.pdf</loc>
+  <lastmod>2025-08-26T10:54:46+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 
