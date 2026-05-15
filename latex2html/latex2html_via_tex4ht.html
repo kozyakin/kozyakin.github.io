@@ -44,7 +44,7 @@
   .thebibliography p.indent{margin-top:1ex;margin-bottom:-1ex;text-indent:1.5em;font-size:90%;background:#f5f5f5}
   .thebibliography dd{margin-top:0;margin-bottom:1em}
   .thebibliography p.noindent{margin-top:-2ex}
-  .columns-3 p.indent{text-indent:0}
+  .columns-3 p.indent{text-indent:-1em;padding-left:1em}
   -->
   </style>
   <meta content='latex2html_via_tex4ht.tex' name='src'>
@@ -60,7 +60,7 @@
       <span class='cmr-12'>Victor Kozyakin</span>
     </div><br>
     <div class='date'>
-      <span class='cmr-12'>November 14, 2025</span>
+      <span class='cmr-12'>May 15, 2026</span>
     </div>
   </div>
   <h3 class='sectionHead' id='call-command'><span class='titlemark'>1</span> <a id='x1-10001'></a>Call Command</h3><!-- l. 26 -->
@@ -106,7 +106,7 @@ make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 \EndPreamble
 </pre><!-- l. 78 -->
   <p class='nopar'></p>
-  <h3 class='sectionHead' id='how-to-reference-equations-in-texhtmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 81 -->
+  <h3 class='sectionHead' id='how-to-reference-equations-in-tex4htmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 81 -->
   <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='cmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 86 -->
   <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='cmbx-10'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='cmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 95 -->
   <p class='indent'>So, for the LaTeX code below</p>
