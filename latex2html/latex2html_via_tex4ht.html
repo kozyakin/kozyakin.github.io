@@ -7,11 +7,11 @@
   <meta content='width=device-width,initial-scale=1' name='viewport'>
   <style type='text/css'>
   <!--
-  .cmr-17{font-size:170%}
-  .cmr-12{font-size:120%}
-  .cmr-6{font-size:60%}
-  .cmr-9{font-size:90%}
-  .cmbx-10{font-weight:700}
+  .rm-lmr-17{font-size:170%}
+  .rm-lmr-12{font-size:120%}
+  .rm-lmr-6{font-size:60%}
+  .rm-lmr-9{font-size:90%}
+  .rm-lmbx-10{font-weight:700}
   p.noindent,p.nopar{text-indent:0}
   p.indent{text-indent:1.5em}
   p{margin-top:0;margin-bottom:0}
@@ -57,10 +57,10 @@
   <div class='maketitle'>
     <h1 class='titleHead'>My notes on how to use Tex4ht+MathJax</h1>
     <div class='author'>
-      <span class='cmr-12'>Victor Kozyakin</span>
+      <span class='rm-lmr-12'>Victor Kozyakin</span>
     </div><br>
     <div class='date'>
-      <span class='cmr-12'>May 15, 2026</span>
+      <span class='rm-lmr-12'>June 13, 2026</span>
     </div>
   </div>
   <h3 class='sectionHead' id='call-command'><span class='titlemark'>1</span> <a id='x1-10001'></a>Call Command</h3><!-- l. 26 -->
@@ -78,7 +78,7 @@ make4ht -s test.tex "myconfig" " -cunihtf -utf8"
   <pre class='verbatim' id='verbatim-2'>
 htlatex test.tex "myconfig" " -cunihtf -utf8"
 </pre><!-- l. 48 -->
-  <p class='nopar'><span class='cmr-9'>or once more</span></p>
+  <p class='nopar'><span class='rm-lmr-9'>or once more</span></p>
   <pre class='verbatim' id='verbatim-3'>
 make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 </pre><!-- l. 52 -->
@@ -107,8 +107,8 @@ make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 </pre><!-- l. 78 -->
   <p class='nopar'></p>
   <h3 class='sectionHead' id='how-to-reference-equations-in-tex4htmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 81 -->
-  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='cmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 86 -->
-  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='cmbx-10'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='cmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 95 -->
+  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='rm-lmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 86 -->
+  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='rm-lmbx-10'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='rm-lmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 95 -->
   <p class='indent'>So, for the LaTeX code below</p>
   <pre class='verbatim' id='verbatim-5'>
 \begin{equation}
@@ -128,8 +128,19 @@ b&amp;=0\label{B}
 \end{align}
 Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{A}$-\eqref{B}.
 </pre><!-- l. 113 -->
-  <p class='nopar'>we obtain the following output: <span class='mathjax-env'>\begin{equation} \boldsymbol {f}(x)=1\label {eq} \end{equation}</span><a id='x1-2001r1'></a> <span class='mathjax-block'>\[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]</span></p><!-- l. 124 -->
-  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: <span class='mathjax-inline'>\(\mathrm {(\ref {E:mycond})}\)</span> <span class='mathjax-env'>\begin{align} a & =1\label {A} \\ b & =0\label {B} \end{align}</span><a id='x1-2002r2'></a></p><!-- l. 131 -->
+  <p class='nopar'>we obtain the following output:</p>
+  <div class='mathjax-env mathjax-equation'>
+    \begin{equation} \boldsymbol {f}(x)=1\label {eq} \end{equation}
+  </div>
+  <p><a id='x1-2001r1'></a></p>
+  <div class='mathjax-block'>
+    \[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]
+  </div><!-- l. 124 -->
+  <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: <span class='mathjax-inline'>\(\mathrm {(\ref {E:mycond})}\)</span></p>
+  <div class='mathjax-env mathjax-align'>
+    \begin{align} a & =1\label {A} \\ b & =0\label {B} \end{align}
+  </div>
+  <p><a id='x1-2002r2'></a> <!-- l. 131 --></p>
   <p class='indent'>Example of references: we have equation <span class='mathjax-inline'>\(\mathrm {(\ref {eq})}\)</span> from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or <span class='mathjax-inline'>\(\ref {A}\)</span>-<span class='mathjax-inline'>\(\mathrm {(\ref {B})}\)</span>.</p>
   <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3><!-- l. 136 -->
   <p class='noindent'>Tex4th supports TikZ, however, for correct displaying text and math symbols in TikZ picture, it is needed to put in the preamble of tex ﬁle the following lines, before TikZ package loading:</p>
@@ -160,4 +171,3 @@ Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{
   </section>
 </body>
 </html>
-
