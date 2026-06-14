@@ -7,11 +7,10 @@
   <meta content='width=device-width,initial-scale=1' name='viewport'>
   <style type='text/css'>
   <!--
-  .rm-lmr-17{font-size:170%}
-  .rm-lmr-12{font-size:120%}
-  .rm-lmr-6{font-size:60%}
-  .rm-lmr-9{font-size:90%}
-  .rm-lmbx-10{font-weight:700}
+  .ec-lmr-17{font-size:170%}
+  .ec-lmr-12{font-size:120%}
+  .ec-lmr-9{font-size:90%}
+  .ec-lmbx-10{font-weight:700}
   p.noindent,p.nopar{text-indent:0}
   p.indent{text-indent:1.5em}
   p{margin-top:0;margin-bottom:0}
@@ -57,31 +56,31 @@
   <div class='maketitle'>
     <h1 class='titleHead'>My notes on how to use Tex4ht+MathJax</h1>
     <div class='author'>
-      <span class='rm-lmr-12'>Victor Kozyakin</span>
+      <span class='ec-lmr-12'>Victor Kozyakin</span>
     </div><br>
     <div class='date'>
-      <span class='rm-lmr-12'>June 13, 2026</span>
+      <span class='ec-lmr-12'>June 14, 2026</span>
     </div>
   </div>
-  <h3 class='sectionHead' id='call-command'><span class='titlemark'>1</span> <a id='x1-10001'></a>Call Command</h3><!-- l. 26 -->
+  <h3 class='sectionHead' id='call-command'><span class='titlemark'>1</span> <a id='x1-10001'></a>Call Command</h3><!-- l. 27 -->
   <p class='noindent'>My problem was to make a HTML ﬁle with plenty of mathematics from a LaTeX one. As a beginner, I immediately faced the following problems:</p>
   <ul class='itemize1'>
     <li class='itemize'>How to run Tex4ht to get HTML ﬁle with mathematics?</li>
     <li class='itemize'>What to do to make proper referencing of mathematical formulas?</li>
     <li class='itemize'>How to cope with TikZ ﬁgures?</li>
-  </ul><!-- l. 35 -->
+  </ul><!-- l. 36 -->
   <p class='indent'>After a while I discovered that the most suitable way for me is to join Tex4ht with MathJax. And the simplest way was to run the following command to process <span class='obeylines-h'><code class='verb'>test.tex</code></span> ﬁle:</p>
   <pre class='verbatim' id='verbatim-1'>
 make4ht -s test.tex "myconfig" " -cunihtf -utf8"
-</pre><!-- l. 42 -->
+</pre><!-- l. 43 -->
   <p class='nopar'>and after that, if one wants to embed into resulted <span class='obeylines-h'><code class='verb'>test.html</code></span> the css-ﬁle <span class='obeylines-h'><code class='verb'>test.css</code></span> generated during previous command, one should issue one the following command</p>
   <pre class='verbatim' id='verbatim-2'>
 htlatex test.tex "myconfig" " -cunihtf -utf8"
-</pre><!-- l. 48 -->
-  <p class='nopar'><span class='rm-lmr-9'>or once more</span></p>
+</pre><!-- l. 49 -->
+  <p class='nopar'><span class='ec-lmr-9'>or once more</span></p>
   <pre class='verbatim' id='verbatim-3'>
 make4ht -s test.tex "myconfig" " -cunihtf -utf8"
-</pre><!-- l. 52 -->
+</pre><!-- l. 53 -->
   <p class='nopar'>where the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span> is as follows</p>
   <pre class='verbatim' id='verbatim-4'>
 \Preamble{xhtml,0,mathjax,p-indent,fn-in,nostyle}
@@ -104,11 +103,11 @@ make4ht -s test.tex "myconfig" " -cunihtf -utf8"
 \begin{document}
 
 \EndPreamble
-</pre><!-- l. 78 -->
+</pre><!-- l. 79 -->
   <p class='nopar'></p>
-  <h3 class='sectionHead' id='how-to-reference-equations-in-tex4htmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 81 -->
-  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='rm-lmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 86 -->
-  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='rm-lmbx-10'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='rm-lmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 95 -->
+  <h3 class='sectionHead' id='how-to-reference-equations-in-tex4htmathjax'><span class='titlemark'>2</span> <a id='x1-20002'></a>How to reference equations in TeX4ht+MathJax</h3><!-- l. 82 -->
+  <p class='noindent'>Unfortunately, it turned out that reference in conjunction TeX4ht+MathJax works well when they referenced sections, subsections and other structure element that are in <span class='ec-lmbx-10'>text mode</span>, but when you are trying to reference the label of equation you are getting ???.</p><!-- l. 87 -->
+  <p class='indent'>The problem is turned out to be rather easily solvable: to reference labels of equations, align or other things in <span class='ec-lmbx-10'>math mode</span> you should put the calling <span class='obeylines-h'><code class='verb'>\eqref</code></span> or <span class='obeylines-h'><code class='verb'>\ref</code></span> in a <span class='ec-lmbx-10'>math environment</span>, e.g. by surrounding them by <span class='obeylines-h'><code class='verb'>$’s</code></span> or <span class='obeylines-h'><code class='verb'>\(</code></span>…<span class='obeylines-h'><code class='verb'>\)</code></span>. Another way is to redeﬁne the command <span class='obeylines-h'><code class='verb'>\eqref</code></span> in order that it will be invoked in math mode automatically (see the appropriate string in the conﬁg ﬁle <span class='obeylines-h'><code class='verb'>myconfig.cfg</code></span>.</p><!-- l. 96 -->
   <p class='indent'>So, for the LaTeX code below</p>
   <pre class='verbatim' id='verbatim-5'>
 \begin{equation}
@@ -127,7 +126,7 @@ a&amp;=1\label{A}\\
 b&amp;=0\label{B}
 \end{align}
 Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{A}$-\eqref{B}.
-</pre><!-- l. 113 -->
+</pre><!-- l. 114 -->
   <p class='nopar'>we obtain the following output:</p>
   <div class='mathjax-env mathjax-equation'>
     \begin{equation} \boldsymbol {f}(x)=1\label {eq} \end{equation}
@@ -135,29 +134,29 @@ Example of references: we have equation \eqref{eq} from Sec. \ref{S1}. Or $\ref{
   <p><a id='x1-2001r1'></a></p>
   <div class='mathjax-block'>
     \[ 1\neq 1. \tag {OneIsNotOne Condition}\label {E:mycond} \]
-  </div><!-- l. 124 -->
+  </div><!-- l. 125 -->
   <p class='indent'>Here, the reference to <span class='obeylines-h'><code class='verb'>\tag{OneIsNotOne&nbsp;Condition}</code></span> in previous equation is as follows: <span class='mathjax-inline'>\(\mathrm {(\ref {E:mycond})}\)</span></p>
   <div class='mathjax-env mathjax-align'>
     \begin{align} a & =1\label {A} \\ b & =0\label {B} \end{align}
   </div>
-  <p><a id='x1-2002r2'></a> <!-- l. 131 --></p>
+  <p><a id='x1-2002r2'></a> <!-- l. 132 --></p>
   <p class='indent'>Example of references: we have equation <span class='mathjax-inline'>\(\mathrm {(\ref {eq})}\)</span> from Sec. <a href='#call-command'>1<!-- tex4ht:ref: S1  --></a>. Or <span class='mathjax-inline'>\(\ref {A}\)</span>-<span class='mathjax-inline'>\(\mathrm {(\ref {B})}\)</span>.</p>
-  <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3><!-- l. 136 -->
+  <h3 class='sectionHead' id='how-to-cope-with-tikz-figures'><span class='titlemark'>3</span> <a id='x1-30003'></a>How to cope with TikZ ﬁgures</h3><!-- l. 137 -->
   <p class='noindent'>Tex4th supports TikZ, however, for correct displaying text and math symbols in TikZ picture, it is needed to put in the preamble of tex ﬁle the following lines, before TikZ package loading:</p>
   <pre class='verbatim' id='verbatim-6'>
 \ifdefined\HCode%
    \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}%
 \fi%
-</pre><!-- l. 143 -->
-  <p class='nopar'></p><!-- l. 145 -->
+</pre><!-- l. 144 -->
+  <p class='nopar'></p><!-- l. 146 -->
   <p class='indent'>Below is an example of using TikZ.</p>
   <figure class='figure' id='x1-30011'>
-    <span id='example-of-stanford'></span> <!-- l. 150 -->
+    <span id='example-of-stanford'></span> <!-- l. 151 -->
     <p class='noindent'><img alt='[Picture]' src='latex2html_via_tex4ht0x.svg'></p>
     <figcaption class='caption'>
       <span class='id'>Figure&nbsp;1:</span> <span class='content'>Example of Stanford</span>
     </figcaption><!-- tex4ht:label?: x1-30011  -->
-  </figure><!-- l. 209 -->
+  </figure><!-- l. 210 -->
   <p class='indent'>Citation example:&nbsp;<span class='cite'>[<a href='#XNDKKP_DSS96'>1</a>]</span>.</p>
   <h3 class='likesectionHead' id='references'><a id='x1-4000'></a>References</h3><!-- l. 18 -->
   <p class='noindent'></p>
